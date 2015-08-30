@@ -30,8 +30,7 @@ nav {
 }
 
 .header {
-  color: color("materialize-red", "lighten-2");
-  font-weight: 300;
+  color: $off-black;
 }
 
 .caption {
@@ -90,7 +89,7 @@ ul.side-nav.fixed {
     }
 
     a {
-      font-size: 13px;
+      font-size: 1.2rem;
       line-height: 44px;
       height: 44px;
     }
@@ -132,7 +131,7 @@ a.button-collapse.top-nav {
   left: 7.5%;
   top: 0;
   float: none;
-  margin-left: 1.5rem;
+  //margin-left: 1.5rem;
   color: #fff;
   font-size: 32px;
   z-index: 2;
@@ -193,7 +192,9 @@ a.button-collapse.top-nav {
 }
 
 #index-banner {
-  background-color: color("materialize-red", "lighten-2");
+  background-color:$primary-color;
+  //background: @include background-image(radial-gradient(center, ellipse cover, rgba(0,135,85,0.08) 0%, rgba(0,135,85,1) 83%));
+  background: radial-gradient(ellipse at center, rgba(0,135,85,0.08) 0%, rgba(0,135,85,1) 83%);
   .container {
     position: relative;
   }
