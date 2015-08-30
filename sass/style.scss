@@ -89,9 +89,9 @@ ul.side-nav.fixed {
     }
 
     a {
-      font-size: 1.2rem;
-      line-height: 44px;
-      height: 44px;
+      font-size: 1.5rem;
+      line-height: 3.4rem;
+      height: 3.4rem;
     }
   }
 
@@ -194,7 +194,7 @@ a.button-collapse.top-nav {
 #index-banner {
   background-color:$primary-color;
   //background: @include background-image(radial-gradient(center, ellipse cover, rgba(0,135,85,0.08) 0%, rgba(0,135,85,1) 83%));
-  background: radial-gradient(ellipse at center, rgba(0,135,85,0.08) 0%, rgba(0,135,85,1) 83%);
+  background: radial-gradient(ellipse at center, rgba(0,135,85,0.38) 0%, rgba(0,135,85,1) 83%);
   height:100vh;
   .container {
     position: relative;
@@ -255,26 +255,28 @@ a.button-collapse.top-nav {
 }
 
 .sha {
-  color: hsl(0, 0%, 94%) ;
- margin: 0 6px 0 6px;
+  color: hsl(0, 0%, 94%);
+  margin: 0 6px 0 6px;
 }
 
-#demo-button {
+#demo-btn {
   background-color: $accent-color-accent;
   //width: 260px;
   //height: 70px;
   //line-height: 70px;
-  font-size: 1.7rem;
+  //font-size: 1.7rem;
   //font-weight: 400;
-  padding:0 4rem 0 4rem;
+  padding:0 5rem 0 5rem;
+  //margin:1rem;
 
   &:hover {
     background-color: lighten($accent-color-accent, 10%);
   }
 }
 
-#header-button{
+.header-btn{
   font-size: 1.7rem;
+  margin:1rem;
 }
 
 #tag{
@@ -284,7 +286,7 @@ a.button-collapse.top-nav {
 }
 
 #header-logo{
-  width:40%;
+  width:55%;
 }
 
 .promo{

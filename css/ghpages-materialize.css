@@ -5378,13 +5378,13 @@ html {
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
     html {
-      font-size: 14px; } }
+      font-size: 12px; } }
   @media only screen and (min-width: 992px) {
     html {
-      font-size: 14.5px; } }
+      font-size: 14px; } }
   @media only screen and (min-width: 1200px) {
     html {
-      font-size: 15px; } }
+      font-size: 16px; } }
   html ul.side-nav {
     font-family: 'Bebas', sans-serif;
     font-weight: 300; }
@@ -8330,9 +8330,9 @@ ul.side-nav.fixed {
     ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
       background-color: rgba(0, 0, 0, 0.05); }
     ul.side-nav.fixed li a {
-      font-size: 1.2rem;
-      line-height: 44px;
-      height: 44px; }
+      font-size: 1.5rem;
+      line-height: 3.4rem;
+      height: 3.4rem; }
   ul.side-nav.fixed ul.collapsible-accordion {
     background-color: #FFF; }
   ul.side-nav.fixed:hover {
@@ -8399,8 +8399,8 @@ a.button-collapse.top-nav {
 
 #index-banner {
   background-color: #008755;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 135, 85, 0.08) 0%, #008755 83%);
-  background: radial-gradient(ellipse at center, rgba(0, 135, 85, 0.08) 0%, #008755 83%);
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 135, 85, 0.38) 0%, #008755 83%);
+  background: radial-gradient(ellipse at center, rgba(0, 135, 85, 0.38) 0%, #008755 83%);
   height: 100vh; }
   #index-banner .container {
     position: relative; }
@@ -8444,15 +8444,15 @@ a.button-collapse.top-nav {
   color: #f0f0f0;
   margin: 0 6px 0 6px; }
 
-#demo-button {
+#demo-btn {
   background-color: #e5336e;
-  font-size: 1.7rem;
-  padding: 0 4rem 0 4rem; }
-  #demo-button:hover {
+  padding: 0 5rem 0 5rem; }
+  #demo-btn:hover {
     background-color: #ea608e; }
 
-#header-button {
-  font-size: 1.7rem; }
+.header-btn {
+  font-size: 1.7rem;
+  margin: 1rem; }
 
 #tag {
   height: 100%;
@@ -8460,7 +8460,7 @@ a.button-collapse.top-nav {
   left: 0; }
 
 #header-logo {
-  width: 40%; }
+  width: 55%; }
 
 .promo {
   width: 100%; }
