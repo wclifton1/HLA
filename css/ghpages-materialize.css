@@ -8356,7 +8356,6 @@ a.button-collapse.top-nav {
   position: absolute;
   text-align: center;
   height: 48px;
-  width: 48px;
   left: 7.5%;
   top: 0;
   float: none;
@@ -8421,29 +8420,28 @@ a.button-collapse.top-nav {
 @media only screen and (max-width: 600px) {
   #index-banner h4 {
     margin-bottom: 0; } }
-.github-commit {
-  padding: 14px 0;
-  margin-top: -64px;
-  height: 64px;
-  line-height: 36px;
-  background-color: #5c5757;
-  color: #e6e6e6;
+.hla {
+  position: relative;
+  padding: 1rem 0;
+  margin-top: -4rem;
+  height: 4rem;
+  line-height: 110%;
+  background-color: #00c47c;
   font-size: .9rem; }
+  .hla .hla-logo {
+    position: relative; }
+  .hla h1 {
+    position: absolute;
+    bottom: 2.6rem;
+    left: -0.05rem;
+    margin: 0;
+    line-height: 1; }
+  .hla h4 {
+    margin-top: -.2rem; }
 
 @media only screen and (max-width: 992px) {
-  .github-commit {
-    text-align: center; } }
-#github-button {
-  background-color: #6f6d6d;
-  -webkit-transition: 0.25s ease;
-  transition: 0.25s ease; }
-  #github-button:hover {
-    background-color: #797777; }
-
-.sha {
-  color: #f0f0f0;
-  margin: 0 6px 0 6px; }
-
+  .hla {
+    margin-top: -4rem; } }
 #demo-btn {
   background-color: #e5336e;
   padding: 0 5rem 0 5rem; }

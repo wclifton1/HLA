@@ -279,45 +279,14 @@
 	.st273{clip-path:url(#SVGID_134_);fill:#D9D9D6;}
 	.st274{opacity:0.87;clip-path:url(#SVGID_134_);}
 	.st275{clip-path:url(#SVGID_136_);}
-	.st276{clip-path:url(#SVGID_138_);}
-	.st277{clip-path:url(#SVGID_140_);}
-	.st278{clip-path:url(#SVGID_142_);fill:#2D2926;}
-	.st279{clip-path:url(#SVGID_142_);fill:#008755;}
-	.st280{clip-path:url(#SVGID_142_);fill:#006845;}
-	.st281{opacity:0.87;clip-path:url(#SVGID_142_);}
-	.st282{clip-path:url(#SVGID_144_);}
-	.st283{font-family:'LetterGothicStd';}
-	.st284{font-size:298.3816px;}
-	.st285{font-family:'BebasNeueBold';}
-	.st286{font-size:227.9306px;}
-</style>
-<style type="text/css">
-<![CDATA[
-@font-face{font-family:'LetterGothicStd';src:url("data:;base64,\
-T1RUTwACACAAAQAAQ0ZGIDg49NgAAABYAAABgWNtYXAACQCiAAAALAAAACwAAAABAAAAAwAAAAwA\
-BAAgAAAABAAEAAEAAABt//8AAABt////lAABAAAAAAEABAIAAQEBEExldHRlckdvdGhpY1N0ZAAB\
-AQEd+BsB+BcE+BwMFXf7tPkA+jQF90UP90gRrffzEgACAQFkcUNvcHlyaWdodCAxOTg3LCAxOTkw\
-LCAxOTkxLCAxOTk1LCAxOTk4LCAyMDAxLCAyMDAyIEFkb2JlIFN5c3RlbXMgSW5jb3Jwb3JhdGVk\
-LiBBbGwgcmlnaHRzIHJlc2VydmVkLi9GU1R5cGUgOCBkZWYAAAAATgACAQFMpou9+Oy9Ab29+CS9\
-A70W+Ij5UPyIBveO+8UV+z73kwX36Ab7IPvAFfc+95MF/JIH/AZeFfc+95P3PvuTBfwG+L8V9z77\
-k/s++5MFDqB2+ImyAdi69zS69zS6FDjYFrr4OwaznbSwuBvAjlVjH/wquvhFB66frqy1G7Cld1Uf\
-/D+6+EEHzWe4R11nbWlwHrF8c6VgG1dhcGFtH37QBVsGll6TU0UaDn2Z+KWW90ihvYsG+7SL14sH\
-HqA0CR8MCYsMC7MKugv47BQAAAA=")}
-@font-face{font-family:'BebasNeueBold';src:url("data:;base64,\
-T1RUTwADACAAAQAQQ0ZGIMFBnL0AAACIAAABukdQT1Ov9r8vAAACRAAAAG5jbWFwAOUBiAAAADwA\
-AABMAAAAAQAAAAMAAAAMAAQAQAAAAAwACAACAAQAVABhAGQAaQBs//8AAABUAGEAZABpAGz///+t\
-/6H/n/+b/5kAAQAAAAAAAAAAAAAAAAEABAIAAQEBDkJlYmFzTmV1ZUJvbGQAAQEBIPgbAfgUBPgc\
-DBX7HftH+nz6EgX3Ig+MEPctEaf4MhIAAgEBQE1Db3B5cmlnaHQgXChjXCkgMjAxMCBieSBSeW9p\
-Y2hpIFRzdW5la2F3YS4gQWxsIHJpZ2h0cyByZXNlcnZlZC4vRlNUeXBlIDAgZGVmAAAAADUAQgBF\
-AEoATQAGAQE8W5LQ5PzxoHb5UHcBZfgkA70W+FT5UPxUBvgCNhU0+5bo+6QFMwZH92ZG+2YFPgbo\
-96Q095YF4QbK+1fL91cFDjGgdvjs7wH3D/cCA5P47BX3B/zs9wL47PcH7/voBg5koHb3E+r4cncB\
-lvgVA/ew+VAV+zUG+wT9UAXwBp73EwX3Gwae+xMF9wMG+1r41BXA+/YFIQYOZYvv+IjvAbP3AvcK\
-9wIDsxb3Qgb3AsHI9wQf9/YH9wRVyPsCHvtCBvdAJxWuoHlZH/wAB1l2eWgeTfiIBg6gdvlQdwGz\
-9wIDsxb3AvlQ+wIGDiCL7/jsdwGz9wIDsxb3t+/7Sfjs+wIGDoOT+VCTBu8K9wILypqXlQwM0Zml\
-DA33UhT4UhUAAAABAAAACgAeACwAAURGTFQACAAEAAAAAP//AAEAAAABa2VybgAIAAAAAQAAAAEA\
-BAACAAAAAQAIAAEAKgAEAAAABAASABgAHgAkAAEAAv/aAAEAAf/aAAEAAv//AAEAAf/OAAEABAAB\
-AAIAAwAFAAA=")}
-]]>
+	.st276{fill:#006845;}
+	.st277{clip-path:url(#SVGID_138_);}
+	.st278{clip-path:url(#SVGID_140_);}
+	.st279{clip-path:url(#SVGID_142_);fill:#2D2926;}
+	.st280{clip-path:url(#SVGID_142_);fill:#008755;}
+	.st281{clip-path:url(#SVGID_142_);fill:#006845;}
+	.st282{opacity:0.87;clip-path:url(#SVGID_142_);}
+	.st283{clip-path:url(#SVGID_144_);}
 </style>
 <g>
 	<g>
@@ -361,10 +330,18 @@ AAIAAwAFAAA=")}
 							<use xlink:href="#SVGID_143_"  style="overflow:visible;"/>
 						</clipPath>
 						<g class="st154">
-							<text transform="matrix(1 0 0 1 273.6683 264.8414)" class="st283 st284">m</text>
+							<path d="M296.6,154.7c0-20.9-2.4-37.6-5.7-51h14.3l3.9,20.6c9-12.5,21.5-20.6,37-20.6c12.8,0,20,7.8,24.5,19.1
+								c8.1-10.1,18.8-19.1,32.5-19.1c20.3,0,31,13.4,31,33.1v128h-14V137.4c0-16.1-7.8-22.1-18.8-22.1c-12.5,0-23,9.8-28.9,20.3
+								v129.2h-14V143.7c0-11.9-0.9-28-16.7-28c-13.4,0-25.7,11-31,23v126.2h-14V154.7z"/>
 						</g>
 						<g class="st154">
-							<text transform="matrix(1 0 0 1 443.7464 264.8414)" class="st285 st286">Tilda</text>
+							<path d="M445.6,105.3h77.5v22.8h-26.2v136.8h-25.1V128.1h-26.2V105.3z"/>
+							<path d="M534,105.3h25.1v159.6H534V105.3z"/>
+							<path d="M577.3,105.3h25.1V242h41.3v22.8h-66.3V105.3z"/>
+							<path d="M654.6,105.3h39.7c25.1,0,37.4,13.9,37.4,39.4v80.7c0,25.5-12.3,39.4-37.4,39.4h-39.7V105.3z M679.6,128.1v114h14.1
+								c8,0,12.8-4.1,12.8-15.5v-83c0-11.4-4.8-15.5-12.8-15.5H679.6z"/>
+							<path d="M828.7,264.8h-25.3l-4.3-28.9h-30.8l-4.3,28.9h-23l25.5-159.6h36.7L828.7,264.8z M771.5,214.2h24.2l-12.1-80.7
+								L771.5,214.2z"/>
 						</g>
 					</g>
 				</g>
