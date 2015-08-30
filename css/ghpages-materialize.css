@@ -5373,6 +5373,7 @@ a {
 
 html {
   line-height: 1.5;
+  font-family: 'Quattrocento', serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
@@ -5384,9 +5385,6 @@ html {
   @media only screen and (min-width: 1200px) {
     html {
       font-size: 15px; } }
-  @media (min-width: 1000px) {
-    html {
-      font-family: 'Quattrocento', serif; } }
   html ul.side-nav {
     font-family: 'Bebas', sans-serif;
     font-weight: 300; }
@@ -5789,9 +5787,17 @@ small {
     background-color: #DFDFDF;
     color: #9F9F9F; }
 
-.btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
+.btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
   font-size: 1.3rem;
-  line-height: inherit; }
+  font-family: 'Bebas', sans-serif;
+  font-weight: 300; }
+  .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
+    font-size: 1.3rem;
+    line-height: inherit; }
+  .btn i.tag, .btn-large i.tag, .btn-floating i.tag, .btn-large i.tag, .btn-flat i.tag {
+    line-height: 100%;
+    font-size: 4rem;
+    left: 0; }
 
 .btn, .btn-large {
   text-decoration: none;
@@ -8394,11 +8400,14 @@ a.button-collapse.top-nav {
 #index-banner {
   background-color: #008755;
   background: -webkit-radial-gradient(center, ellipse, rgba(0, 135, 85, 0.08) 0%, #008755 83%);
-  background: radial-gradient(ellipse at center, rgba(0, 135, 85, 0.08) 0%, #008755 83%); }
+  background: radial-gradient(ellipse at center, rgba(0, 135, 85, 0.08) 0%, #008755 83%);
+  height: 100vh; }
   #index-banner .container {
     position: relative; }
   #index-banner .header {
     color: #FFF; }
+  #index-banner .first {
+    margin-top: 30vh; }
   #index-banner h4 {
     margin-bottom: 40px; }
   #index-banner h1 {
@@ -8414,6 +8423,7 @@ a.button-collapse.top-nav {
     margin-bottom: 0; } }
 .github-commit {
   padding: 14px 0;
+  margin-top: -64px;
   height: 64px;
   line-height: 36px;
   background-color: #5c5757;
@@ -8434,15 +8444,23 @@ a.button-collapse.top-nav {
   color: #f0f0f0;
   margin: 0 6px 0 6px; }
 
-#download-button {
-  background-color: #f3989b;
-  width: 260px;
-  height: 70px;
-  line-height: 70px;
-  font-size: 18px;
-  font-weight: 400; }
-  #download-button:hover {
-    background-color: #f5a5a8; }
+#demo-button {
+  background-color: #e5336e;
+  font-size: 1.7rem;
+  padding: 0 4rem 0 4rem; }
+  #demo-button:hover {
+    background-color: #ea608e; }
+
+#header-button {
+  font-size: 1.7rem; }
+
+#tag {
+  height: 100%;
+  position: absolute;
+  left: 0; }
+
+#header-logo {
+  width: 40%; }
 
 .promo {
   width: 100%; }
