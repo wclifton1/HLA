@@ -1,11 +1,13 @@
 .tabs {
   @include flexbox();
   position: relative;
-  height: 48px;
+  height: 4rem;
   background-color: $tabs-bg-color;
   margin: 0 auto;
   width: 100%;
   white-space: nowrap;
+  font-family: 'Bebas';
+  font-size: 1.3rem;
 
   .tab {
     -webkit-box-flex: 1;
@@ -15,8 +17,8 @@
     display: block;
     float: left;
     text-align: center;
-    line-height: 48px;
-    height: 48px;
+    line-height: 4rem;
+    height: 4rem;
     padding: 0 20px;
     margin: 0;
     text-transform: uppercase;

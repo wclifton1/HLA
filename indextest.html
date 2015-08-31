@@ -28,85 +28,22 @@
     <meta name="theme-color" content="#005938">
     <!-- CSS-->
     <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/test.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="//cdn.transifex.com/live.js"></script>
+    <!--script src="//cdn.transifex.com/live.js"></script-->
   </head>
   <body>
-    <header>
-      <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="mdi-navigation-menu"></i></a></div>
-      <ul id="nav-mobile" class="side-nav fixed">
-        <li class="logo"><a id="logo-container" href="" class="brand-logo">
-            <object id="front-page-logo" type="image/svg+xml" data="images/logo.svg">Your browser does not support SVG</object></a></li>
-        <li class=""><a href="about.html" class="waves-effect waves-teal">About</a></li>
-        <li class=""><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li class=""><a class="collapsible-header  waves-effect waves-teal">CSS</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="color.html">Color</a></li>
-                  <li><a href="grid.html">Grid</a></li>
-                  <li><a href="helpers.html">Helpers</a></li>
-                  <li><a href="media-css.html">Media</a></li>
-                  <li><a href="sass.html">Sass</a></li>
-                  <li><a href="shadow.html">Shadow</a></li>
-                  <li><a href="table.html">Table</a></li>
-                  <li><a href="typography.html">Typography</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class=""><a class="collapsible-header  waves-effect waves-teal">Components</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="badges.html">Badges</a></li>
-                  <li><a href="buttons.html">Buttons</a></li>
-                  <li><a href="cards.html">Cards</a></li>
-                  <li><a href="chips.html">Chips</a></li>
-                  <li><a href="collections.html">Collections</a></li>
-                  <li><a href="footer.html">Footer</a></li>
-                  <li><a href="forms.html">Forms</a></li>
-                  <li><a href="icons.html">Icons</a></li>
-                  <li><a href="navbar.html">Navbar</a></li>
-                  <li><a href="pagination.html">Pagination</a></li>
-                  <li><a href="preloader.html">Preloader</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class=""><a class="collapsible-header  waves-effect waves-teal">JavaScript</a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="collapsible.html">Collapsible</a></li>
-                  <li><a href="dialogs.html">Dialogs</a></li>
-                  <li><a href="dropdown.html">Dropdown</a></li>
-                  <li><a href="media.html">Media</a></li>
-                  <li><a href="modals.html">Modals</a></li>
-                  <li><a href="parallax.html">Parallax</a></li>
-                  <li><a href="pushpin.html">Pushpin</a></li>
-                  <li><a href="scrollfire.html">ScrollFire</a></li>
-                  <li><a href="scrollspy.html">Scrollspy</a></li>
-                  <li><a href="side-nav.html">SideNav</a></li>
-                  <li><a href="tabs.html">Tabs</a></li>
-                  <li><a href="transitions.html">Transitions</a></li>
-                  <li><a href="waves.html">Waves</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class=""><a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">Mobile</a></li>
-        <li class=""><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li>
-      </ul>
-    </header>
+  <div class="wrap" id="wrap">
     <main>
       <div class="section" id="index-banner">
         <div class="container">
           <div class="row center first">
-            <object id="header-logo" type="image/svg+xml" data="images/logo-white.svg">Your browser does not support SVG</object>
-            <h4 class ="header col s12 light center">We make lab life easier</h4>
+            <object class="header-logo" type="image/svg+xml" data="images/logo-white.svg">Your browser does not support SVG</object>
+            <h3 class ="header col s12 light center">We make lab life easier</h3>
           </div>
           <div class="row center">
-            <a href="" id="" class="btn-large waves-effect waves-light header-btn">Learn More</a>
+            <a href="" id="" class="btn-large waves-effect waves-light header-btn hide-on-small-only">Learn More</a>
             <a href="" id="demo-btn" class="btn-large waves-effect waves-light header-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg">Your browser does not support SVG</object>Request a Demo</a>
           </div>
 
@@ -120,6 +57,48 @@
           <div class="hla-logo">
             <h1>HLA</h1>
             <h4 class="light">Data Systems</h4>
+          </div>
+        </div>
+      </div>
+
+      <div id="" class="tab-contents">
+        <div class="row first">
+          <div class="container">
+            <div class="col s4">
+              <object class="logo" type="image/svg+xml" data="images/logo.svg">Your browser does not support SVG</object>
+            </div>
+            <div class="col s8">
+              <ul class="tabs">
+                <li class="tab col s2"><a href="#test1">Product</a></li>
+                <li class="tab col s2"><a class="active" href="#test2">Support</a></li>
+                <li class="tab col s2"><a href="#test3">Team</a></li>
+                <li class="tab col s2 disabled"><a href="#test4">Disabled</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div id="test1" class="col s12">Product<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div id="test2" class="col s12">Support <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div id="test3" class="col s12">Team <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div id="test4" class="col s12">Disabled <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
           </div>
         </div>
       </div>
@@ -178,18 +157,19 @@
       </div>
 
 
-    </main>    <footer class="page-footer">
+    </main>    
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l4 s12">
             <h5 class="white-text">Help Materialize Grow</h5>
             <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
             <form id="paypal-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="">
-<button class="btn waves-effect waves-light red lighten-3" type="submit" name="action" alt="PayPal - The safer, easier way to pay online!">Donate Now
-</button>
-</form>
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="">
+              <button class="btn waves-effect waves-light red lighten-3" type="submit" name="action" alt="PayPal - The safer, easier way to pay online!">Donate Now
+              </button>
+            </form>
 
           </div>
           <div class="col l4 s12">
@@ -212,18 +192,20 @@
         </div>
       </div>
     </footer>
+    </div>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
-    </script>
-    <script src="js/jquery.timeago.min.js"></script>
-    <script src="bin/materialize.js"></script>
-    <script src="js/init.js"></script>
+    <!--script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
+    </script-->
+    <!--script src="js/jquery.timeago.min.js"></script-->
+    <!--script src="bin/materialize.js"></script-->
+    <!--script src="js/init.js"></script-->
+    <script src="js/custom.js"></script>
     <!-- Twitter Button -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <!--script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script-->
 
     <!-- Google Plus Button-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--script src="https://apis.google.com/js/platform.js" async defer></script-->
 
   </body>
 </html>
