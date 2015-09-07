@@ -52,3 +52,31 @@
 
 .tabs .tab { padding: 0; }
 
+.tab-container{
+  .logo{
+    height:3rem;
+    margin:.5rem 0;
+  }
+  .tab-nav{
+    z-index: 99;
+    .row{
+      margin-bottom: 0;
+    }
+    .fix-nav & {
+    background-color: rgba(255,255,255,.87);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @extend .z-depth-1;
+    @include material-animation-default();
+    }
+  }
+  .tab-contents{
+    .tab-slider{
+      @include slide-in;
+    }
+    .fix-nav & {
+      margin-top: 4rem;
+    }
+  }
+}

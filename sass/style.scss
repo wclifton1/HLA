@@ -11,7 +11,7 @@ p.box {
 p {
   color: rgba(0, 0, 0, 0.71);
   padding: 0;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -31,6 +31,7 @@ nav {
 
 .header {
   color: $off-black;
+  @include fade-in;
 }
 
 .caption {
@@ -221,7 +222,7 @@ a.button-collapse.top-nav {
 }
 
 
-// Latest commit widget
+// HLA bar (Latest commit widget)
 .hla {
   position:relative;
   margin-top: -4rem;
@@ -229,6 +230,7 @@ a.button-collapse.top-nav {
   line-height: 1.1;
   background-color: $primary-color-light;
   font-size: .9rem;
+  @extend .z-depth-1;
   .hla-logo{
     position:relative;
   }
@@ -246,10 +248,14 @@ a.button-collapse.top-nav {
   }
 }
 
+#learn-btn{
+  @include fade-in(1s);
+}
+
 #demo-btn {
   background-color: $accent-color-accent;
   padding:0 5rem 0 5rem;
-
+  @include fade-in(1s);
   &:hover {
     background-color: lighten($accent-color-accent, 10%);
   }
@@ -264,29 +270,6 @@ a.button-collapse.top-nav {
   height:100%;
   position:absolute;
   left:0;
-}
-
-//TAB CONTENTS
-.tab-container{
-  background:$gradient;
-
-  .logo{
-    height:3rem;
-    margin:.5rem 0;
-  }
-  .tab-bar{
-    background:white;
-    .fix-nav & {
-    background-color: rgba(255,255,255,.87);
-    }
-  }
-}
-
-.tab-shadow{
-  @extend .z-depth-0;
-  .fix-nav & {
-    @extend .z-depth-1;
-  }
 }
 
 .top-header {
@@ -839,50 +822,10 @@ body.parallax-demo footer {
   opacity: 0;
 
 }
-
-// Transifex Styling
-
-#tx-live-lang-container {
-  background-color: #fcfcfc;
-  z-index: 999;
-
-  #tx-live-lang-picker {
-    background-color: #fcfcfc;
-
-    li {
-      color: $off-black;
-      &:hover{
-      color: inherit;
-      background-color: color("materialize-red", "lighten-5");
-      }
-    }
-
+//scrolling changes
+.fix-nav{
+  .hla{
+    @include material-animation-default();
+    @extend .z-depth-0;
   }
-
-  .txlive-langselector-toggle {
-    border-bottom: 2px solid color("materialize-red", "lighten-2");
-  }
-
-  .txlive-langselector-current {
-    color: $off-black;
-  }
-
-  .txlive-langselector-marker {
-    border-bottom: 4px solid rgba(0,0,0,.61);
-  }
-
-
-}
-
-
-// Thanks for Downloading
-
-#download-thanks {
-  display: none;
-}
-
-
-// Twitter widget
-#twitter-widget-0 {
-  width: 190px !important;
 }
