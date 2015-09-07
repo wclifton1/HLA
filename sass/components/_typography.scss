@@ -23,8 +23,8 @@ html{
   //}
 
   ul.side-nav{
-  font-family: 'Bebas', sans-serif;
-  font-weight: 300;
+    font-family: 'Bebas', sans-serif;
+    font-weight: 300;
   }
 
   font-weight: normal;
@@ -46,10 +46,9 @@ h6 { font-family:'Bebas', sans-serif; font-size: $h6-fontsize; font-weight: 700;
 
 // Text Styles
 em { font-style: italic; }
-strong { font-weight: 500; }
-small { font-size: 75%; }
+small {font-weight:300;}
+strong { font-weight: 700; }
 .light { font-weight: 300; }
-.thin { font-weight: 200; }
 
 
 .flow-text{

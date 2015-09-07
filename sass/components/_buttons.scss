@@ -3,7 +3,7 @@
   border: none;
   border-radius: 2px;
   display: inline-block;
-  height: $button-height;
+  //height: $button-height;
   line-height: $button-line-height;
   // margin-bottom: 15px;
   outline: 0;
@@ -152,8 +152,8 @@ button.btn-floating {
 // Large button
 .btn-large {
   @extend .btn;
-  height: $button-height * 1.5;
-  line-height: 56px;
+  //height: $button-height * 1.5;
+  //line-height: 56px;
 
   i {
     font-size: $button-large-icon-font-size;

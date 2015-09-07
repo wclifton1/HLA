@@ -5516,17 +5516,14 @@ h6 {
 em {
   font-style: italic; }
 
-strong {
-  font-weight: 500; }
-
 small {
-  font-size: 75%; }
+  font-weight: 300; }
+
+strong {
+  font-weight: 700; }
 
 .light, footer.page-footer .footer-copyright {
   font-weight: 300; }
-
-.thin {
-  font-weight: 200; }
 
 .flow-text {
   font-weight: 300; }
@@ -5614,9 +5611,11 @@ small {
           transition: box-shadow .25s;
   border-radius: 2px; }
   .card .card-title {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 300; }
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Bebas', sans-serif;
+    line-height: 1; }
     .card .card-title.activator {
       cursor: pointer; }
   .card.small, .card.medium, .card.large {
@@ -5667,10 +5666,8 @@ small {
     padding: 20px;
     border-radius: 0 0 2px 2px; }
     .card .card-content p {
-      margin: 0;
+      margin: 1rem 0 0 0;
       color: inherit; }
-    .card .card-content .card-title {
-      line-height: 48px; }
   .card .card-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
@@ -5839,7 +5836,6 @@ small {
   border: none;
   border-radius: 2px;
   display: inline-block;
-  height: 36px;
   line-height: 2.4;
   outline: 0;
   padding: 0 2rem;
@@ -5944,11 +5940,8 @@ button.btn-floating {
     color: #b3b3b3;
     cursor: default; }
 
-.btn-large {
-  height: 54px;
-  line-height: 56px; }
-  .btn-large i {
-    font-size: 1.6rem; }
+.btn-large i {
+  font-size: 1.6rem; }
 
 .btn-block {
   display: block; }
@@ -6688,11 +6681,24 @@ body {
   background: url(../images/tubes-50.jpg) no-repeat center center fixed;
   background-size: cover; }
 
+#product {
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.87) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.87) 100%); }
+
 #support {
   background-color: #454545; }
 
 .white-box {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px; }
+
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.green-bg {
+  background-color: #008755; }
 
 /*# sourceMappingURL=ghpages-materialize.css.map */

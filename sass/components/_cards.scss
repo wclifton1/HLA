@@ -20,9 +20,11 @@
 
 
   .card-title {
-    color: $card-bg-color;
-    font-size: 24px;
-    font-weight: 300;
+    color: $card-title-color;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Bebas', sans-serif;
+    line-height: 1;
     &.activator {
       cursor: pointer;
     }
@@ -110,11 +112,8 @@
 
 
     p {
-      margin: 0;
+      margin: 1rem 0 0 0;
       color: inherit;
-    }
-    .card-title {
-      line-height: 48px;
     }
   }
 

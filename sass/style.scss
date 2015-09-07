@@ -837,6 +837,9 @@ body{
   background-size: cover;
   //background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.65) 100%), url(../images/tubes-50.jpg) no-repeat center center;
 }
+#product{
+  background:linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.87) 100%);
+}
 
 #support{
   background-color:#454545;
@@ -845,4 +848,12 @@ body{
 .white-box{
   background-color:$white-trans;
   border-radius:2px;
+}
+
+.flex-row{
+  display:flex;
+}
+
+.green-bg{
+  background-color:$primary-color;
 }
