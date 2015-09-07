@@ -1,7 +1,7 @@
 .tabs {
   @include flexbox();
   position: relative;
-  height: 4rem;
+  height: 5rem;
   background-color: $tabs-bg-color;
   margin: 0 auto;
   width: 100%;
@@ -17,8 +17,8 @@
     display: block;
     float: left;
     text-align: center;
-    line-height: 4rem;
-    height: 4rem;
+    line-height: 5rem;
+    height: 5rem;
     padding: 0 20px;
     margin: 0;
     text-transform: uppercase;
@@ -55,28 +55,27 @@
 .tab-container{
   .logo{
     height:3rem;
-    margin:.5rem 0;
+    margin:0.5rem 0 1.5rem 0;
   }
   .tab-nav{
     z-index: 99;
+    margin-bottom:-5rem;
     .row{
       margin-bottom: 0;
     }
+    background-color: rgba(255,255,255,.93);
     .fix-nav & {
-    background-color: rgba(255,255,255,.87);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    @extend .z-depth-1;
-    @include material-animation-default();
+      position: fixed;
+      top: 0;
+      width: 100%;
+      @extend .z-depth-1;
+      @include material-animation-default();
     }
   }
   .tab-contents{
     .tab-slider{
       @include slide-in;
     }
-    .fix-nav & {
-      margin-top: 4rem;
-    }
+    padding-top: 5rem;
   }
 }

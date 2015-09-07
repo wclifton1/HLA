@@ -31,7 +31,7 @@ nav {
 
 .header {
   color: $off-black;
-  @include fade-in;
+  @include fade-in(0.8s);
 }
 
 .caption {
@@ -182,7 +182,8 @@ a.button-collapse.top-nav {
 
 #index-banner {
   background-color:$primary-color;
-  background: radial-gradient(ellipse at center, rgba(0,135,85,0.38) 0%, rgba(0,135,85,1) 83%);
+  //background: radial-gradient(ellipse at center, rgba(0,135,85,0.38) 0%, rgba(0,135,85,1) 83%);
+  background: radial-gradient(ellipse at center, #94C9B1 0%, $primary-color 83%);
   height:100vh;
   .container {
     position: relative;
@@ -191,7 +192,10 @@ a.button-collapse.top-nav {
     color: #FFF;
   }
   .first{
-    margin-top: 25vh;
+    margin-top: 30vh;
+  }
+  .valign-wrapper{
+    height:100vh;
   }
   h1 {
     margin-top: 16px;
@@ -809,33 +813,6 @@ body.parallax-demo footer {
   margin-bottom: 0;
 }
 
-// Pushpin Demo styles
-.pushpin-demo {
-  position: relative;
-  height: 100px;
-}
-#pushpin-demo-1 {
-  display: block;
-  height: inherit;
-  background-color: #ddd;
-}
-
-// Valign Demo
-.valign-demo {
-  height: 400px;
-  background-color: #ddd;
-}
-.talign-demo {
-  height: 100px;
-  background-color: #ddd;
-}
-
-// Transitions demos
-#staggered-test li,
-#image-test {
-  opacity: 0;
-
-}
 //scrolling changes
 .fix-nav{
   .hla{
@@ -847,14 +824,25 @@ body.parallax-demo footer {
 .ear-r{
   @include ear-wiggle();
 }
+.logo-letter{
+  @include type-in;
+}
+.logo-goat{
+  @include fade-in;
+}
 
-// @keyframes hideshow {
-//   0% { opacity: 1; }
-//   10% { opacity: 1; }
-//   15% { opacity: 0; }
-//   100% { opacity: 0; }
-// }
+body{
+  //height: 50vh;
+  background:url(../images/tubes-50.jpg) no-repeat center center fixed;
+  background-size: cover;
+  //background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.65) 100%), url(../images/tubes-50.jpg) no-repeat center center;
+}
 
-// .ear-r {
-//   animation: hideshow 10s ease infinite;
-// }
+#support{
+  background-color:#454545;
+}
+
+.white-box{
+  background-color:$white-trans;
+  border-radius:2px;
+}

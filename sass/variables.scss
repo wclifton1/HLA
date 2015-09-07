@@ -20,6 +20,8 @@ $link-color: color("light-blue", "darken-1") !default;
 
 $gradient:radial-gradient(ellipse at center,#fff 0,#fff 41%,#e1e1e1 99%);
 
+$white-trans: rgba(255,255,255,0.8);
+
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
 
@@ -236,12 +238,37 @@ $fade-duration-default:0.8s;
 }
 
 @keyframes ear-wiggle {
-    0% {transform: rotate(0deg); transform-origin: 0% 0%;}
-    98% {transform: rotate(0deg); transform-origin: 0% 0%;}
+  0% {transform: rotate(0deg); transform-origin: 0% 0%;}
+  98% {transform: rotate(0deg); transform-origin: 0% 0%;}
 	99% {transform: rotate(5deg); transform-origin: 0% 0%;}
 	100% {transform: rotate(-5deg); transform-origin: 0% 0%;}
 }
 
 @mixin ear-wiggle($delay:0s){
 	animation: ear-wiggle 10s $animation-curve-default infinite;
+}
+
+@keyframes type-in {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@mixin type-in{
+	opacity: 0;
+	animation: type-in 0.1s 0.5s $animation-curve-default forwards;
+  &:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.7s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.9s;
+  }
+  &:nth-child(6) {
+    animation-delay: 1.0s;
+  }
 }

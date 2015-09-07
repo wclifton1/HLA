@@ -1,1 +1,1 @@
-var wrap=$("#wrap"),window_height=$(window).height();wrap.on("scroll",function(a){this.scrollTop>window_height?wrap.addClass("fix-nav"):wrap.removeClass("fix-nav")});
+var wrap=$("#wrap"),window_height=$(window).height();wrap.on("scroll",function(){this.scrollTop>window_height?wrap.addClass("fix-nav"):wrap.removeClass("fix-nav")});
