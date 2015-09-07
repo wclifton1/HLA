@@ -1679,6 +1679,48 @@
   100% {
     opacity: 1;
     left: 0; } }
+@-webkit-keyframes ear-wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; }
+  98% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; }
+  99% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; } }
+@keyframes ear-wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; }
+  98% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; }
+  99% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%; } }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -6129,6 +6171,15 @@ a.button-collapse.top-nav {
     margin-top: 16px; }
   #index-banner .header-logo {
     width: 55%; }
+  #index-banner .fallback {
+    display: none;
+    width: 50%;
+    height: 200px;
+    margin-left: 25%;
+    /* Make sure it's the same size as the SVG takes up */ }
+  #index-banner .no-svg .fallback {
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain; }
 
 @media only screen and (max-width: 600px) {
   #index-banner h3 {
@@ -6138,6 +6189,8 @@ a.button-collapse.top-nav {
     margin-top: 15vh;
     margin-bottom: 0; }
   #index-banner .header-logo {
+    width: 35%; }
+  #index-banner .fallback {
     width: 35%; } }
 .hla {
   position: relative;
@@ -6609,5 +6662,9 @@ body.parallax-demo footer {
           transition-duration: 0.2s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.ear-r {
+  -webkit-animation: ear-wiggle 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+          animation: ear-wiggle 10s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
 
 /*# sourceMappingURL=ghpages-materialize.css.map */

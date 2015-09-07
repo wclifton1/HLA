@@ -199,6 +199,17 @@ a.button-collapse.top-nav {
   .header-logo{
     width:55%;
   }
+  .fallback { 
+    display: none;
+    width:50%;
+    height:200px;
+    margin-left:25%;
+    /* Make sure it's the same size as the SVG takes up */
+  }
+  .no-svg .fallback { 
+    background: url(../images/logo.png) no-repeat; 
+    background-size: contain;
+  }
 }
 @media #{$small-and-down} {
   #index-banner {
@@ -216,6 +227,9 @@ a.button-collapse.top-nav {
     }
     //font-size: .75rem;
     .header-logo{
+      width:35%;
+    }
+    .fallback{
       width:35%;
     }
   }
@@ -829,3 +843,18 @@ body.parallax-demo footer {
     @extend .z-depth-0;
   }
 }
+
+.ear-r{
+  @include ear-wiggle();
+}
+
+// @keyframes hideshow {
+//   0% { opacity: 1; }
+//   10% { opacity: 1; }
+//   15% { opacity: 0; }
+//   100% { opacity: 0; }
+// }
+
+// .ear-r {
+//   animation: hideshow 10s ease infinite;
+// }

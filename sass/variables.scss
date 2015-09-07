@@ -234,3 +234,14 @@ $fade-duration-default:0.8s;
 	transition: $transition;
 	animation: slide-in 0.5s forwards;
 }
+
+@keyframes ear-wiggle {
+    0% {transform: rotate(0deg); transform-origin: 0% 0%;}
+    98% {transform: rotate(0deg); transform-origin: 0% 0%;}
+	99% {transform: rotate(5deg); transform-origin: 0% 0%;}
+	100% {transform: rotate(-5deg); transform-origin: 0% 0%;}
+}
+
+@mixin ear-wiggle($delay:0s){
+	animation: ear-wiggle 10s $animation-curve-default infinite;
+}
