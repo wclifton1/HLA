@@ -9,7 +9,7 @@ p.box {
   padding: 20px;
 }
 p {
-  color: rgba(0, 0, 0, 0.71);
+  //color: $off-black;
   padding: 0;
   -webkit-font-smoothing: antialiased
 }
@@ -180,6 +180,10 @@ a.button-collapse.top-nav {
   margin: 0 auto;
 }
 
+.first{
+    margin-top: 30vh;
+  }
+
 #index-banner {
   background-color:$primary-color;
   //background: radial-gradient(ellipse at center, rgba(0,135,85,0.38) 0%, rgba(0,135,85,1) 83%);
@@ -191,9 +195,7 @@ a.button-collapse.top-nav {
   .header {
     color: #FFF;
   }
-  .first{
-    margin-top: 30vh;
-  }
+  
   .valign-wrapper{
     height:100vh;
   }
@@ -248,23 +250,26 @@ a.button-collapse.top-nav {
   line-height: 1.1;
   background-color: $primary-color-light;
   font-size: .9rem;
-  @extend .z-depth-1;
-  .hla-logo{
-    position:relative;
-  }
+  @extend .z-depth-1;  
   h1{
-    position:absolute;
-    bottom: 4rem;
-    left: -0.05rem;
-    margin:0;
-    line-height: .73;
-  }
-  h4{
-    padding: .8rem 0;
-    position: relative;
-    margin: 0;
-  }
+      position:absolute;
+    }
 }
+
+.hla-logo{
+    position:relative;
+    h1{
+      bottom: 4rem;
+      left: -0.05rem;
+      margin:0;
+      line-height: .73;
+    }
+    h4{
+      padding: .8rem 0;
+      position: relative;
+      margin: 0;
+    }
+  }
 
 #learn-btn{
   @include fade-in(1s);
@@ -845,15 +850,33 @@ body{
   background-color:#454545;
 }
 
-.white-box{
+.white-card{
   background-color:$white-trans;
-  border-radius:2px;
+  padding: $card-padding;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  border-radius: 2px;
 }
 
 .flex-row{
   display:flex;
 }
 
-.green-bg{
+.testimony{
   background-color:$primary-color;
+  color:white;
+}
+
+.relative-pos{
+  position:relative;
+}
+
+footer.page-footer {
+  margin-top: 0;
+  color:white;
+  // position:relative;
+  .hla-logo{
+    // position: absolute;
+    // bottom: 0;
+    color: white;
+  }
 }

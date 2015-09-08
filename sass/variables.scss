@@ -16,13 +16,13 @@ $accent-color-light: lighten($accent-color, 26%) !default;
 $accent-color-dark: darken($accent-color, 9%) !default;
 $accent-color-accent: saturate(lighten($accent-color, 12%), 11%) !default; 
 
-$success-color: color("green", "base") !default;
-$error-color: color("red", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
+$success-color: $primary-color-light !default;
+$error-color: $accent-color !default;
+$link-color: $secondary-color-accent !default;
 
 $gradient:radial-gradient(ellipse at center,#fff 0,#fff 41%,#e1e1e1 99%);
 
-$white-trans: rgba(255,255,255,0.8);
+$white-trans: rgba(255,255,255,0.08);
 
 /*** Badges ***/
 $badge-bg-color: $secondary-color !default;
@@ -63,11 +63,11 @@ $icons-font-path: "../font/material-design-icons/" !default;
 
 /*** Forms ***/
 // Text Inputs + Textarea
-$input-border-color: color("grey", "base") !default;
+$input-border-color: white !default;
 $input-bg-color: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
-$input-focus-color: $secondary-color !default;
+$input-focus-color: $secondary-color-accent !default;
 $label-font-size: .8rem !default;
 $input-disabled-color: rgba(0,0,0, .26) !default;
 $input-disabled-solid-color: #BDBDBD !default;
