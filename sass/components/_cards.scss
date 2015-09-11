@@ -28,6 +28,9 @@
     &.activator {
       cursor: pointer;
     }
+    h4{
+      margin:0 0 0.912rem 0;
+    }
   }
 
   // Card Sizes
@@ -109,8 +112,6 @@
   .card-content {
     padding: $card-padding;
     border-radius: 0 0 2px 2px;
-
-
     p {
       margin: 1rem 0 0 0;
       color: inherit;

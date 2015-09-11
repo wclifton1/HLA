@@ -113,8 +113,8 @@ $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
 
 /*** Navbar ***/
-$navbar-height: 64px !default;
-$navbar-height-mobile: 56px !default;
+$navbar-height: 5rem !default;
+$navbar-height-mobile: 5rem !default;
 $navbar-font-color: #fff !default;
 $navbar-brand-font-size: 2.1rem !default;
 
@@ -230,25 +230,27 @@ $fade-duration-default:0.8s;
 }
 
 @keyframes slide-in {
-    0% { opacity: 0; left: 100px; }
-    100% { opacity: 1; left: 0; }
+    0% { opacity: 0; transform:translateX(100px); }
+    100% { opacity: 1; transform:translateX(0); }
 }
 
 @mixin slide-in($delay:0s){
 	position:relative;
-	transition: $transition;
-	animation: slide-in 0.5s forwards;
+	animation: slide-in 0.2s $animation-curve-default forwards;
 }
 
 @keyframes ear-wiggle {
   0% {transform: rotate(0deg); transform-origin: 0% 0%;}
-  98% {transform: rotate(0deg); transform-origin: 0% 0%;}
-	99% {transform: rotate(5deg); transform-origin: 0% 0%;}
-	100% {transform: rotate(-5deg); transform-origin: 0% 0%;}
+  50% {transform: rotate(0deg); transform-origin: 0% 0%;}
+	51% {transform: rotate(5deg); transform-origin: 0% 0%;}
+	52% {transform: rotate(-7deg); transform-origin: 0% 0%;}
+  54% {transform: rotate(7deg); transform-origin: 0% 0%;}
+  56% {transform: rotate(-5deg); transform-origin: 0% 0%;}
+  100% {transform: rotate(0deg); transform-origin: 0% 0%;}
 }
 
 @mixin ear-wiggle($delay:0s){
-	animation: ear-wiggle 10s $animation-curve-default infinite;
+	animation: ear-wiggle 5s $animation-curve-default infinite;
 }
 
 @keyframes type-in {
@@ -274,4 +276,22 @@ $fade-duration-default:0.8s;
   &:nth-child(6) {
     animation-delay: 1.0s;
   }
+}
+
+@keyframes slide-down {
+    0% { transform: translateY(-$navbar-height);}
+    100% { transform: translateY(0);}
+}
+
+@mixin slide-down{
+  animation: slide-down 0.2s $animation-curve-default forwards;
+}
+
+@keyframes slide-up {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(-$navbar-height);}
+}
+
+@mixin slide-up{
+  animation: slide-up 0.2s $animation-curve-default forwards;
 }

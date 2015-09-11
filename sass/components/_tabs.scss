@@ -30,9 +30,13 @@
       display: block;
       width: 100%;
       height: 100%;
+      font-size: 1.5rem;
       @include transition( color .28s ease);
       &:hover {
         color: lighten($tabs-text-color, 20%);
+      }
+      .btn{
+        font-size: 1.5rem;
       }
     }
 
@@ -55,27 +59,29 @@
 .tab-container{
   .logo{
     height:3rem;
-    margin:0.5rem 0 1.5rem 0;
+    margin:1rem 0;
   }
   .tab-nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    //transform: translateY(-$navbar-height);
+    @include slide-up;
+    background-color: rgba(255,255,255,.93);
     z-index: 99;
     margin-bottom:-5rem;
     .row{
       margin-bottom: 0;
     }
-    background-color: rgba(255,255,255,.93);
     .fix-nav & {
-      position: fixed;
-      top: 0;
-      width: 100%;
+      @include slide-down;
       @extend .z-depth-1;
-      @include material-animation-default();
     }
   }
   .tab-contents{
+    //padding-top: 5rem;
     .tab-slider{
       @include slide-in;
     }
-    padding-top: 5rem;
   }
 }
