@@ -353,7 +353,7 @@ a.button-collapse.top-nav {
 
   i {
     margin: 40px 0;
-    color: color("materialize-red", "lighten-2");
+    color: $accent-color;
     font-size: 7rem;
     display: block;
   }
@@ -850,7 +850,45 @@ body.parallax-demo footer {
 }
 
 #support{
-  background-color:#454545;
+  background:$gradient;
+  overflow: hidden;
+  position: relative;
+  .support-heart{
+    background:url(../images/heart-tubes.png) no-repeat bottom right;
+    background-size:40%;
+    @media #{$small-and-down}{
+      padding-bottom:150px;
+    }
+  }
+  .support-options{
+    background:url(../images/support.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+    position:relative;
+    font-size: 1.25em;
+    // .support-centered{
+    //   height: 100%;
+    //   margin: 0 auto;
+    //   position: relative;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    // }
+
+    .collapsible-header{
+      background-color:$primary-color-light;
+      border-radius: 2px;
+      border-bottom: none;
+    }
+    h5.collapsible-header{margin:0}
+    .collapsible-body{
+      background-color:rgba(255,255,255,.93);
+      border-radius: 2px;
+    }
+  }
+}
+
+.collapsible.popout > li {
+  margin: 16px 24px;
 }
 
 .white-card{
@@ -893,6 +931,7 @@ footer.page-footer {
   overflow: hidden;
   position: relative;
   padding: 55px;
+  box-sizing:content-box;
   @media only screen and (max-width: 767px){
     background: rgba(144,164,174,.1);
     height: auto;
@@ -902,6 +941,7 @@ footer.page-footer {
     margin-bottom: 0;
   }
   @media only screen and (max-width: 1024px) and (min-width: 768px){
+    padding: 36px;
     min-height: 800px;
     padding-top: 124px;
   }
