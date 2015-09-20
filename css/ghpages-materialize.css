@@ -5892,8 +5892,8 @@ strong {
             animation: slide-down 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
 .tab-container .tab-contents .tab-slider {
   position: relative;
-  -webkit-animation: slide-in 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-          animation: slide-in 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+  -webkit-animation: slide-in 0.75s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          animation: slide-in 0.75s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
 
 .btn, .btn-large, .btn-flat {
   border: none;

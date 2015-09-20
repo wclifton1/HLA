@@ -105,8 +105,8 @@
               <h3 class ="header col s12 light center">We make lab life easier</h3>
             </div>
             <div class="row center">
-              <a href="#product" id="learn-btn" class="btn-large waves-effect waves-light header-btn hide-on-small-only">Learn More</a>
-              <a href="#team" id="demo-btn" class="btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
+              <a href="#top" id="learn-btn" class="smooth btn-large waves-effect waves-light header-btn hide-on-small-only">Learn More</a>
+              <a href="#top" id="demo-btn" class="btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
             </div>
           </div>
         </div>
@@ -120,20 +120,20 @@
           </div>
         </div>
 
-        <div class="tab-container">
+        <div id="top" class="tab-container">
 
           <div class="tab-nav">
             <div class="container">
               <div class="row">
                 <div class="col s2 tabs">
-                  <a href="#index-banner"><object class="logo" type="image/svg+xml" data="images/logo-head.svg"></object></a>
+                  <a class="smooth" href="#index-banner"><object class="logo" type="image/svg+xml" data="images/logo-head.svg"></object></a>
                 </div>
                 <div class="col s10">
                   <ul class="tabs">
-                    <li class="tab col s3"><a class="active" href="#product">Product</a></li>
-                    <li class="tab col s3"><a href="#support">Support</a></li>
-                    <li class="tab col s3"><a href="#team">Team</a></li>
-                    <li class="tab col s3"><a href="#action"><button class="btn demo-btn">Demo</button></a></li>
+                    <li class="tab col s3"><a class="default active" href="#product">Product</a></li>
+                    <li class="tab col s3"><a class="default" href="#support">Support</a></li>
+                    <li class="tab col s3"><a class="default" href="#team">Team</a></li>
+                    <li class="tab col s3"><a class="default" href="#action"><button class="btn demo-btn">Demo</button></a></li>
                   </ul>
                 </div>
               </div>
@@ -298,6 +298,14 @@
                           <h5 class="light collapsible-header"><i class="material-icons">filter_drama</i>Level 1</h5>
                           <div class="collapsible-body"><p>With the dedicated package, there is no need for a professional services purchase order, or an estimate of hours worked.We will handle all your account maintenance, support, and reporting needs as part of your annual fee. </p></div>
                         </li>
+                        <li>
+                          <h5 class="light collapsible-header active"><i class="material-icons">filter_drama</i>Level 2</h5>
+                          <div class="collapsible-body"><p>With the dedicated package, there is no need for a professional services purchase order, or an estimate of hours worked.We will handle all your account maintenance, support, and reporting needs as part of your annual fee. </p></div>
+                        </li>
+                        <li>
+                          <h5 class="light collapsible-header"><i class="material-icons">filter_drama</i>Level 3</h5>
+                          <div class="collapsible-body"><p>With the dedicated package, there is no need for a professional services purchase order, or an estimate of hours worked.We will handle all your account maintenance, support, and reporting needs as part of your annual fee. </p></div>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -411,10 +419,7 @@
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script>
-      $(document).ready(function() {
-        console.log("ready");
       function filterPath(string) {
-          console.log("String: %s", string);
       return string
         .replace(/^\//,'')
         .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
@@ -428,15 +433,36 @@
       $('a[href*=#]').each(function() {
         var thisPath = filterPath(this.pathname) || locationPath;
         console.log("thisPath: %s", thisPath);
+        console.log("this.hash: %s", this.hash);
         if (  locationPath == thisPath
         && (location.hostname == this.hostname || !this.hostname)
-        && this.hash.replace(/#/,'') ) {
-          var $target = $(this.hash), target = this.hash;
+        && this.hash.replace(/#/,'')
+        && $(this).hasClass("smooth") ) {
+        //var $target = $(this.hash), target = this.hash;
+        var $target = $("#top"), target = "#top";
+        console.log("target: %s", target);
           if (target) {
             var targetOffset = $target.offset().top;
             $(this).click(function(event) {
               event.preventDefault();
-              $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+              $(scrollElem).animate({scrollTop: targetOffset}, 750, 'easeInOutExpo', function() {
+                location.hash = target;
+              });
+            });
+          }
+        }
+        if (  locationPath == thisPath
+        && (location.hostname == this.hostname || !this.hostname)
+        && this.hash.replace(/#/,'')
+        && $(this).hasClass("default") ) {
+        //var $target = $(this.hash), target = this.hash;
+        var $target = $("#top"), target = "#top";
+        console.log("target: %s", target);
+          if (target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function(event) {
+              event.preventDefault();
+              $(scrollElem).animate({scrollTop: targetOffset}, 0, function() {
                 location.hash = target;
               });
             });
@@ -456,12 +482,13 @@
             var isScrollable = $scrollElement.scrollTop()> 0;
             $scrollElement.scrollTop(0);
             if (isScrollable) {
+              console.log("el: %s", el);
               return el;
             }
           }
         }
         return [];
-      }});
+      };
     </script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script>
     <script src="bin/materialize.js"></script>

@@ -31,15 +31,6 @@
     <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="js/min/modernizr.custom.27293.js"></script>
-    <!-- CSS-->
-    <style>
-      #star{background:blue; height:500px}
-      #star {
-        text-align: center;
-        font-size: 100px;
-        line-height: 500px;
-        color: #ddd;
-      }</style>
   </head>
   <body>
    <!--  <a href="#bottom" id="top">Click to scroll down</a>
@@ -436,7 +427,7 @@
             var targetOffset = $target.offset().top;
             $(this).click(function(event) {
               event.preventDefault();
-              $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+              $(scrollElem).animate({scrollTop: targetOffset}, 1000, 'easeInOutExpo', function() {
                 location.hash = target;
               });
             });

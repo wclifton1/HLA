@@ -236,7 +236,7 @@ $fade-duration-default:0.8s;
 
 @mixin slide-in($delay:0s){
 	position:relative;
-	animation: slide-in 0.2s $animation-curve-default forwards;
+	animation: slide-in 0.75s $animation-curve-default forwards;
 }
 
 @keyframes ear-wiggle {
