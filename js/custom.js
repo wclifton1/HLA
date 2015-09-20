@@ -8,5 +8,5 @@ wrap.on("scroll", function() {
   } else {
     wrap.removeClass("fix-nav");
   }
-  
 });
+

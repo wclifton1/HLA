@@ -7980,10 +7980,8 @@ footer.page-footer {
     .content-panel .btn-floating.multitasking {
       left: 265px;
       top: 25px; }
-    .content-panel .btn-floating.js-active {
-      background: #fff url(../images/animation/multitasking-blue.svg) 50% 50% no-repeat; }
-      .content-panel .btn-floating.js-active i {
-        color: #00e892; }
+    .content-panel .btn-floating.js-active i {
+      color: #00e892; }
     .content-panel .btn-floating.notifications {
       bottom: 75px;
       left: 70px; }

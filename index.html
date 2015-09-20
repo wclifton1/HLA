@@ -31,8 +31,20 @@
     <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="js/min/modernizr.custom.27293.js"></script>
+    <!-- CSS-->
+    <style>
+      #star{background:blue; height:500px}
+      #star {
+        text-align: center;
+        font-size: 100px;
+        line-height: 500px;
+        color: #ddd;
+      }</style>
   </head>
   <body>
+   <!--  <a href="#bottom" id="top">Click to scroll down</a>
+    <div id="star">&star;</div>
+    <a href="#top" id="bottom">Click to scroll up</a> -->
     <div class="wrap" id="wrap">
       <main>
         <div class="section" id="index-banner">
@@ -93,8 +105,8 @@
               <h3 class ="header col s12 light center">We make lab life easier</h3>
             </div>
             <div class="row center">
-              <a href="" id="learn-btn" class="btn-large waves-effect waves-light header-btn hide-on-small-only">Learn More</a>
-              <a href="" id="demo-btn" class="btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
+              <a href="#product" id="learn-btn" class="btn-large waves-effect waves-light header-btn hide-on-small-only">Learn More</a>
+              <a href="#team" id="demo-btn" class="btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
             </div>
           </div>
         </div>
@@ -114,7 +126,7 @@
             <div class="container">
               <div class="row">
                 <div class="col s2 tabs">
-                  <a href="#learn-btn"><object class="logo" type="image/svg+xml" data="images/logo-head.svg"></object></a>
+                  <a href="#index-banner"><object class="logo" type="image/svg+xml" data="images/logo-head.svg"></object></a>
                 </div>
                 <div class="col s10">
                   <ul class="tabs">
@@ -284,18 +296,7 @@
                       <ul class="collapsible popout" data-collapsible="accordion">
                         <li>
                           <h5 class="light collapsible-header"><i class="material-icons">filter_drama</i>Level 1</h5>
-                          <div class="collapsible-body"><p>With the dedicated package, there is no need for a professional services purchase order, or an estimate of hours worked.
-We will handle all your account maintenance, support, and reporting needs as part of your annual fee. </p></div>
-                        </li>
-                        <li>
-                          <h5 class="light collapsible-header active"><i class="material-icons">place</i>Level 2</h5>
-                          <div class="collapsible-body"><p>With the dedicated package, there is no need for a professional services purchase order, or an estimate of hours worked.
-We will handle all your account maintenance, support, and reporting needs as part of your annual fee. </p></div>
-                        </li>
-                        <li>
-                          <h5 class="light collapsible-header"><i class="material-icons">whatshot</i>Level 3</h5>
-                          <div class="collapsible-body"><p>With the dedicated package, there is no need for a professional services purchase order, or an estimate of hours worked.
-We will handle all your account maintenance, support, and reporting needs as part of your annual fee. </p></div>
+                          <div class="collapsible-body"><p>With the dedicated package, there is no need for a professional services purchase order, or an estimate of hours worked.We will handle all your account maintenance, support, and reporting needs as part of your annual fee. </p></div>
                         </li>
                       </ul>
                     </div>
@@ -356,9 +357,8 @@ We will handle all your account maintenance, support, and reporting needs as par
             
           </div><!--tab-contents-->
         </div><!--tab-container-->
-
       </main>    
-      <footer class="page-footer">
+      <footer id="footer" class="page-footer">
         <div class="container">
           <div class="row">
             <div class="col m4 s12">
@@ -400,7 +400,6 @@ We will handle all your account maintenance, support, and reporting needs as par
                 </form>
               </div>
             </div>
-
           </div>
         </div>
         <div class="footer-copyright">
@@ -409,19 +408,64 @@ We will handle all your account maintenance, support, and reporting needs as par
           </div>
         </div>
       </footer>
-      </div>
-      <!--  Scripts-->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
-      </script>
-      <script src="js/jquery.timeago.min.js"></script>
-      <script src="bin/materialize.js"></script>
-      <script src="js/init.js"></script>
-      <script src="js/custom.js"></script>
-      <!-- Twitter Button -->
-      <!--script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script-->
-
-      <!-- Google Plus Button-->
-      <!--script src="https://apis.google.com/js/platform.js" async defer></script-->
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        console.log("ready");
+      function filterPath(string) {
+          console.log("String: %s", string);
+      return string
+        .replace(/^\//,'')
+        .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+        .replace(/\/$/,'');
+      }
+      var locationPath = filterPath(location.pathname);
+      console.log("locationPath: %s", locationPath);
+      var scrollElem = scrollableElement('.wrap');//'html', 'body'
+      console.log("scrollElem: %s", scrollElem);
+     
+      $('a[href*=#]').each(function() {
+        var thisPath = filterPath(this.pathname) || locationPath;
+        console.log("thisPath: %s", thisPath);
+        if (  locationPath == thisPath
+        && (location.hostname == this.hostname || !this.hostname)
+        && this.hash.replace(/#/,'') ) {
+          var $target = $(this.hash), target = this.hash;
+          if (target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function(event) {
+              event.preventDefault();
+              $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+                location.hash = target;
+              });
+            });
+          }
+        }
+      });
+     
+      // use the first element that is "scrollable"
+      function scrollableElement(els) {
+        for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+          var el = arguments[i],
+              $scrollElement = $(el);
+          if ($scrollElement.scrollTop()> 0) {
+            return el;
+          } else {
+            $scrollElement.scrollTop(1);
+            var isScrollable = $scrollElement.scrollTop()> 0;
+            $scrollElement.scrollTop(0);
+            if (isScrollable) {
+              return el;
+            }
+          }
+        }
+        return [];
+      }});
+    </script>
+    <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script>
+    <script src="bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
