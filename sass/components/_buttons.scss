@@ -62,6 +62,13 @@
   }
 }
 
+.btn-blue{
+  background-color: $secondary-color-accent;
+  &:hover{
+    background-color: lighten($secondary-color-accent, 5%);
+  }
+}
+
 // Floating button
 .btn-floating {
   display: inline-block;

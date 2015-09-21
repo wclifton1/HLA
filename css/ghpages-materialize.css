@@ -1793,6 +1793,24 @@
   100% {
     -webkit-transform: translateY(-5rem);
             transform: translateY(-5rem); } }
+@-webkit-keyframes card-up {
+  0% {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
+@keyframes card-up {
+  0% {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -5941,6 +5959,11 @@ strong {
   .btn:hover, .btn-large:hover {
     background-color: #00de8c; }
 
+.btn-blue {
+  background-color: #1957d0; }
+  .btn-blue:hover {
+    background-color: #1f62e4; }
+
 .btn-floating {
   display: inline-block;
   color: #fff;
@@ -6273,8 +6296,8 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]),
   input[type=search]:focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #1957d0;
-    box-shadow: 0 1px 0 0 #1957d0; }
+    border-bottom: 1px solid #4073d7;
+    box-shadow: 0 1px 0 0 #4073d7; }
   input[type=text]:focus:not([readonly]) + label,
   input[type=password]:focus:not([readonly]) + label,
   input[type=email]:focus:not([readonly]) + label,
@@ -6286,7 +6309,7 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]) + label,
   input[type=search]:focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #1957d0; }
+    color: #4073d7; }
   input[type=text].valid, input[type=text]:focus.valid,
   input[type=password].valid,
   input[type=password]:focus.valid,
@@ -6424,7 +6447,7 @@ textarea.materialize-textarea {
     -webkit-transition: color 0.2s;
     transition: color 0.2s; }
     .input-field .prefix.active {
-      color: #1957d0; }
+      color: #4073d7; }
   .input-field .prefix ~ input,
   .input-field .prefix ~ textarea {
     margin-left: 3rem;
@@ -7059,7 +7082,8 @@ select {
   HTML Styles
 ***************/
 body {
-  background-color: #fcfcfc; }
+  background: -webkit-radial-gradient(center, ellipse, #fff 0, #fff 41%, #e1e1e1 99%);
+  background: radial-gradient(ellipse at center, #fff 0, #fff 41%, #e1e1e1 99%); }
 
 p.box {
   padding: 20px; }
@@ -7628,33 +7652,9 @@ pre[class*="language-"] {
 
 footer {
   font-size: .9rem; }
-
-body.parallax-demo footer {
-  margin-top: 0; }
-
-.image-container {
-  width: 100%; }
-  .image-container img {
-    max-width: 100%; }
-
-@media only screen and (max-width: 600px) {
-  .mobile-image {
-    max-width: 100%; } }
-
-.waves-color-demo .collection-item {
-  height: 57px;
-  line-height: 57px; }
-  .waves-color-demo .collection-item code {
-    line-height: 57px; }
-.waves-color-demo .btn:not(.waves-light), .waves-color-demo .btn-large:not(.waves-light) {
-  background-color: #FFFFFF;
-  color: #212121; }
-
-.card-panel span, .card-content p {
-  -webkit-font-smoothing: antialiased; }
-
-#images .card-panel .row {
-  margin-bottom: 0; }
+  footer a {
+    color: white;
+    text-decoration: underline; }
 
 .fix-nav .hla {
   -webkit-transition-duration: 0.2s;
@@ -7867,29 +7867,28 @@ footer.page-footer {
         border: none;
         box-shadow: none; } }
     .content-panel .phone-text-panel .text {
-      opacity: 0;
+      -webkit-animation: card-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+              animation: card-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
       position: absolute;
-      -webkit-transform: translate(0, 60px);
-          -ms-transform: translate(0, 60px);
-              transform: translate(0, 60px);
       -webkit-transition: all 200ms ease-in-out;
               transition: all 200ms ease-in-out;
-      visibility: hidden;
       width: 300px; }
       .content-panel .phone-text-panel .text h4:before {
         content: " ";
         display: inline-block;
-        height: 20px;
-        margin-bottom: -2px;
-        margin-right: 10px;
-        width: 18px;
-        color: #008755; }
+        height: 26px;
+        margin-bottom: -5px;
+        margin-right: .25rem;
+        width: 26px; }
       .content-panel .phone-text-panel .text h4.multitasking-header:before {
-        background: #fff url(../images/view_quilt.svg) left 50% no-repeat; }
+        background: #fff url(../images/view_quilt.svg) left 50% no-repeat;
+        background-size: contain; }
       .content-panel .phone-text-panel .text h4.notifications-header:before {
-        background: #fff url(../images/trending_up.svg) left 50% no-repeat; }
+        background: #fff url(../images/trending_up.svg) left 50% no-repeat;
+        background-size: contain; }
       .content-panel .phone-text-panel .text h4.design-header:before {
-        background: #fff url(../images/add.svg) left 50% no-repeat; }
+        background: #fff url(../images/add.svg) left 50% no-repeat;
+        background-size: contain; }
       .content-panel .phone-text-panel .text h4 {
         color: #008755;
         font-size: 20px;
@@ -7910,7 +7909,7 @@ footer.page-footer {
                   transform: none;
           visibility: visible;
           width: 100%; } }
-      .content-panel .phone-text-panel .text.js-active {
+      .content-panel .phone-text-panel .text.active {
         opacity: 1;
         -webkit-transform: translate(0, 0);
             -ms-transform: translate(0, 0);
@@ -7918,9 +7917,9 @@ footer.page-footer {
         visibility: visible;
         width: 300px; }
         @media only screen and (max-width: 767px) {
-          .content-panel .phone-text-panel .text.js-active {
+          .content-panel .phone-text-panel .text.active {
             width: 100%; } }
-        .content-panel .phone-text-panel .text.js-active .text-content {
+        .content-panel .phone-text-panel .text.active .text-content {
           opacity: 1;
           visibility: visible; }
   .content-panel .card {
@@ -7976,15 +7975,20 @@ footer.page-footer {
             transition: all 200ms ease-in-out;
     z-index: 3;
     bottom: 300px;
-    left: 50px; }
+    left: 50px;
+    background-color: #00c47c; }
+    .content-panel .btn-floating i {
+      color: white; }
     .content-panel .btn-floating.multitasking {
       left: 265px;
       top: 25px; }
-    .content-panel .btn-floating.js-active i {
-      color: #00e892; }
     .content-panel .btn-floating.notifications {
       bottom: 75px;
       left: 70px; }
+    .content-panel .btn-floating.js-active {
+      background-color: white; }
+      .content-panel .btn-floating.js-active i {
+        color: #00c47c; }
 
 footer.page-footer {
   padding-top: 40px; }

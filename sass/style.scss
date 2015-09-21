@@ -2,7 +2,7 @@
   HTML Styles
 ***************/
 body {
-  background-color: #fcfcfc;
+  background: $gradient;
 }
 
 p.box {
@@ -774,53 +774,12 @@ pre[class*="language-"] {
 // Footer styling
 footer{
   font-size: .9rem;
-}
-body.parallax-demo footer {
-  margin-top: 0;
-}
-
-//About page styling
-.image-container {
-  width: 100%;
-  img {
-    max-width: 100%;
+  a{
+    color:white;
+    text-decoration: underline;
   }
 }
 
-
-// Mobile page styling
-
-.mobile-image {
- @media #{$small-and-down} {
-  max-width: 100%;
- }
-}
-
-// Waves page styling
-.waves-color-demo {
-  .collection-item {
-    height: 57px;
-    line-height: 57px;
-    code {
-     line-height: 57px;
-    }
-  }
-  .btn {
-    &:not(.waves-light) {
-    background-color: color("shades", "white");
-    color: #212121;
-    }
-  }
-}
-
-// Card Page styling
-.card-panel span, .card-content p{
-  -webkit-font-smoothing: antialiased;
-}
-
-#images .card-panel .row {
-  margin-bottom: 0;
-}
 
 //scrolling changes
 .fix-nav{
@@ -1035,29 +994,32 @@ footer.page-footer {
       box-shadow: none;
     }}
     .text {
-      opacity: 0;
+      //opacity: 0;
+      @include card-up;
       position: absolute;
-      transform: translate(0,60px);
+      //transform: translate(0,60px);
       transition: all 200ms ease-in-out;
-      visibility: hidden;
+      //visibility: hidden;
       width: 300px;
       h4:before {
         content: " ";
         display: inline-block;
-        height: 20px;
-        margin-bottom: -2px;
-        margin-right: 10px;
-        width: 18px;
-        color: $primary-color;
+        height: 26px;
+        margin-bottom: -5px;
+        margin-right: .25rem;
+        width: 26px;
       }
       h4.multitasking-header:before{
         background: #fff url(../images/view_quilt.svg) left 50% no-repeat;
+        background-size: contain;
       }
       h4.notifications-header:before{
         background: #fff url(../images/trending_up.svg) left 50% no-repeat;
+        background-size: contain;
       }
       h4.design-header:before{
         background: #fff url(../images/add.svg) left 50% no-repeat;
+        background-size: contain;
       }
       h4 {
         color: $primary-color;
@@ -1079,7 +1041,7 @@ footer.page-footer {
         visibility: visible;
         width: 100%;
       }
-      &.js-active {
+      &.active {
         opacity: 1;
         transform: translate(0,0);
         visibility: visible;
@@ -1146,20 +1108,23 @@ footer.page-footer {
     z-index: 3;
     bottom: 300px;
     left: 50px;
+    background-color:$primary-color-light;
+    i{
+      color:white;
+    }
     &.multitasking {
-      //background: #26C6DA url(../images/animation/multitasking-white.svg) 50% 50% no-repeat;
       left: 265px;
       top: 25px;
-    }
-    &.js-active {
-      //background: #fff url(../images/animation/multitasking-blue.svg) 50% 50% no-repeat;
-      i{
-        color:$primary-color-accent;
-      }
     }
     &.notifications {
       bottom: 75px;
       left: 70px;
+    }
+    &.js-active {
+      background-color:white;
+      i{
+        color:$primary-color-light;
+      }
     }
   }
 }

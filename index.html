@@ -193,32 +193,32 @@
                 <div class="phone-centered clearfix">
                   <div class="phone-content">
                     <h2><strong>Introducing mTilda</strong><br>making lab life easier</h2>
-                    <p>mTilda is a Windows based LIS for the world of histocompatibility and immunogenetics. mTilda is used as the LIS of choice for some of the most innovative and process-intensive laboratories in the country. Through user-feedback and customer relationships, we continue to learn the needs of HLA labs. Countless expansions and improvements have been developed over the years, and Fred and Barbara have continued serving their clients thoughtfully and without fail.</p><a class="small-link hide-on-small-only" href="#" target="_blank">Get to know mTilda ></a>
+                    <p>mTilda is a Windows based LIS for the world of histocompatibility and immunogenetics. mTilda is used as the LIS of choice for some of the most innovative and process-intensive laboratories in the country. Through user-feedback and customer relationships, we continue to learn the needs of HLA labs. Countless expansions and improvements have been developed over the years, and Fred and Barbara have continued serving their clients thoughtfully and without fail.</p>
                   </div>
-                  <div class="phone-text-panel active">
-                    <div class="text card border-box js-active" data-phone-state="multitasking">
+                  <div class="phone-text-panel">
+                    <div id="multitasking" class="text card border-box">
                       <div class="text-content">
                         <h4 class="multitasking-header">Interface Design and Implementation</h4>
-                        <p>An LIS solution must communicate with a suite of software. Our team are experts in both design and implementation of interface initiatives.</p><span class="faux-link hide-on-small-only js-phone-trigger" data-phone-state="notifications" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Next: Optimize your Workflow</span>
+                        <p>An LIS solution must communicate with a suite of software. Our team are experts in both design and implementation of interface initiatives.</p><span class="faux-link hide-on-small-only js-phone-trigger" data-target="notifications" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Next: Optimize your Workflow</span>
                       </div>
                     </div>
-                    <div class="text card border-box" data-phone-state="notifications">
+                    <div id="notifications" class="text card border-box">
                       <div class="text-content">
                         <h4 class="notifications-header">Workflow Integration</h4>
-                        <p>mTilda isn’t just a superior LIS solution, it’s also a process improvement and workflow improvement solution. We are constantly using the feedback of our users to improve their lab processes and make life easier for the supervisors.</p><span class="faux-link hide-on-small-only js-phone-trigger" data-phone-state="design" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Next: Discrete Data</span>
+                        <p>mTilda isn’t just a superior LIS solution, it’s also a process improvement and workflow improvement solution. We are constantly using the feedback of our users to improve their lab processes and make life easier for the supervisors.</p><span class="faux-link hide-on-small-only js-phone-trigger" data-target="design" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Next: Discrete Data</span>
                       </div>
                     </div>
-                    <div class="text card border-box" data-phone-state="design">
+                    <div id="design" class="text card border-box">
                       <div class="text-content">
                         <h4 class="design-header">Discrete Data</h4>
-                        <p>An LIS solution must communicate with a suite of software. Our team are experts in both design and implementation of interface initiatives.</p><span class="faux-link hide-on-small-only js-phone-trigger js-active" data-phone-state="multitasking" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Next: Customized Interface</span>
+                        <p>An LIS solution must communicate with a suite of software. Our team are experts in both design and implementation of interface initiatives.</p><span class="faux-link hide-on-small-only js-phone-trigger js-active" data-target="multitasking" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Next: Customized Interface</span>
                       </div>
                     </div>
                   </div>
                   <div class="phone-base">
-                    <div class="btn-floating btn-large waves-effect waves-light multitasking js-phone-trigger js-active" data-phone-state="multitasking" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">view_quilt</i></div>
-                    <div class="btn-floating btn-large waves-effect waves-light notifications js-phone-trigger" data-phone-state="notifications" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">trending_up</i></div>
-                    <div class="btn-floating btn-large waves-effect waves-light design js-phone-trigger" data-phone-state="design" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">add</i></div>
+                    <div class="btn-floating btn-large waves-effect waves-light multitasking js-phone-trigger active" data-target="multitasking" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">view_quilt</i></div>
+                    <div class="btn-floating btn-large waves-effect waves-light notifications js-phone-trigger" data-target="notifications" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">trending_up</i></div>
+                    <div class="btn-floating btn-large waves-effect waves-light design js-phone-trigger" data-target="design" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">add</i></div>
                     <div class="phone-screen"></div>
                   </div>
                 </div>
@@ -353,7 +353,6 @@
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="" class="btn-large waves-effect waves-light">Explore our Showcase</a>
                   </div>
                 </div>
               </div>
@@ -376,7 +375,7 @@
               </div>
             </div>
             
-            <div class="col m4 s12" style="overflow: hidden;">
+            <div class="col m3 s12" style="overflow: hidden;">
               <h5 class="white-text">Connect</h5>
               <br>
               <a href="https://twitter.com/mTilda" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">Follow @mTilda</a>
@@ -384,14 +383,14 @@
               <div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/" data-rel="publisher"></div>
             </div>
 
-            <div class="col m4 s12">
+            <div class="col m5 s12">
               <h5 class="white-text">Contact the mTilda Team</h5>
               <div class="row">
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">account_circle</i>
-                      <input id="name" type="text" class="validate">
+                      <input id="name" type="text">
                       <label for="name">Name</label>
                     </div>
                     <div class="input-field col s12">
@@ -399,8 +398,13 @@
                       <input id="email" type="email" class="validate">
                       <label for="email">Email</label>
                     </div>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                      <label for="icon_prefix2">Message</label>
+                    </div>
                     <div class="col s12">
-                      <button class="btn waves-effect waves-light btn-right btn-block" type="submit" name="action">Submit
+                      <button class="btn btn-blue waves-effect waves-light btn-right btn-block" type="submit" name="action">Submit
                         <i class="material-icons">send</i>
                       </button>
                     </div>
@@ -426,21 +430,17 @@
         .replace(/\/$/,'');
       }
       var locationPath = filterPath(location.pathname);
-      console.log("locationPath: %s", locationPath);
       var scrollElem = scrollableElement('.wrap');//'html', 'body'
-      console.log("scrollElem: %s", scrollElem);
      
       $('a[href*=#]').each(function() {
         var thisPath = filterPath(this.pathname) || locationPath;
-        console.log("thisPath: %s", thisPath);
-        console.log("this.hash: %s", this.hash);
         if (  locationPath == thisPath
         && (location.hostname == this.hostname || !this.hostname)
         && this.hash.replace(/#/,'')
         && $(this).hasClass("smooth") ) {
         //var $target = $(this.hash), target = this.hash;
         var $target = $("#top"), target = "#top";
-        console.log("target: %s", target);
+        //console.log("target: %s", target);
           if (target) {
             var targetOffset = $target.offset().top;
             $(this).click(function(event) {
@@ -457,7 +457,6 @@
         && $(this).hasClass("default") ) {
         //var $target = $(this.hash), target = this.hash;
         var $target = $("#top"), target = "#top";
-        console.log("target: %s", target);
           if (target) {
             var targetOffset = $target.offset().top;
             $(this).click(function(event) {
@@ -482,7 +481,6 @@
             var isScrollable = $scrollElement.scrollTop()> 0;
             $scrollElement.scrollTop(0);
             if (isScrollable) {
-              console.log("el: %s", el);
               return el;
             }
           }
@@ -494,5 +492,6 @@
     <script src="bin/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/nexus.js"></script>
   </body>
 </html>

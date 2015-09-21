@@ -67,7 +67,7 @@ $input-border-color: white !default;
 $input-bg-color: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
-$input-focus-color: $secondary-color-accent !default;
+$input-focus-color: $secondary-color-light !default;
 $label-font-size: .8rem !default;
 $input-disabled-color: rgba(0,0,0, .26) !default;
 $input-disabled-solid-color: #BDBDBD !default;
@@ -294,4 +294,13 @@ $fade-duration-default:0.8s;
 
 @mixin slide-up{
   animation: slide-up 0.2s $animation-curve-default forwards;
+}
+
+@keyframes card-up {
+    0% { transform: translateY(60px); opacity:0}
+    100% { transform: translateY(0); opacity:1}
+}
+
+@mixin card-up{
+  animation: card-up 0.2s $animation-curve-default forwards;
 }
