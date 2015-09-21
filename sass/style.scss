@@ -192,7 +192,7 @@ a.button-collapse.top-nav {
 #index-banner {
   background-color:$primary-color;
   //background: radial-gradient(ellipse at center, rgba(0,135,85,0.38) 0%, rgba(0,135,85,1) 83%);
-  background: radial-gradient(ellipse at center, #94C9B1 0%, $primary-color 83%);
+  background: $gradient-green;
   height:100vh;
   .container {
     position: relative;
@@ -822,16 +822,8 @@ footer{
   .support-options{
     background:url(../images/support.jpg) no-repeat center center;
     background-size: cover;
-    min-height: 600px;
     position:relative;
     font-size: 1.25em;
-    // .support-centered{
-    //   height: 100%;
-    //   margin: 0 auto;
-    //   position: relative;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-    // }
 
     .collapsible-header{
       background-color:$primary-color-light;
@@ -845,6 +837,48 @@ footer{
     }
   }
 }
+
+#team{
+  background-color:$secondary-color-dark;
+  background:$gradient-blue;
+  color:white;
+  .team-story{
+    background:url(../images/blueware.jpg) no-repeat center center;
+    background-size: cover;
+    position:relative;
+    font-size: 1.25em;
+  }
+  .card-panel{
+    background-color:white;
+    color:$off-black;
+    &.first-panel{
+      background-color:$secondary-color-light;
+      color:white;
+    }
+  }
+
+
+  
+}
+.person{
+    color:$off-black;
+    background-color:white;
+    margin-bottom:100px;
+    h4:first-child{
+      padding-top:2rem;
+    }
+    .container{
+      min-height: 400px;
+    }
+    #adam{
+      background:url(../images/dude.jpg) no-repeat bottom left;
+      background-size:contain;
+    }
+    #gal{
+      background:url(../images/gal.jpg) no-repeat bottom right;
+      background-size:contain;
+    } 
+  }
 
 .collapsible.popout > li {
   margin: 16px 24px;
@@ -876,10 +910,8 @@ footer{
 footer.page-footer {
   margin-top: 0;
   color:white;
-  // position:relative;
+  padding-top: 40px;
   .hla-logo{
-    // position: absolute;
-    // bottom: 0;
     color: white;
   }
 }
@@ -1127,10 +1159,6 @@ footer.page-footer {
       }
     }
   }
-}
-
-footer.page-footer {
-    padding-top: 40px;
 }
 
 .three-things{

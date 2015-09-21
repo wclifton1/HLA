@@ -7713,7 +7713,6 @@ footer {
   #support .support-options {
     background: url(../images/support.jpg) no-repeat center center;
     background-size: cover;
-    min-height: 600px;
     position: relative;
     font-size: 1.25em; }
     #support .support-options .collapsible-header {
@@ -7725,6 +7724,38 @@ footer {
     #support .support-options .collapsible-body {
       background-color: rgba(255, 255, 255, 0.93);
       border-radius: 2px; }
+
+#team {
+  background-color: #153064;
+  background: -webkit-radial-gradient(center, ellipse, #1d428a 0%, #153064 83%);
+  background: radial-gradient(ellipse at center, #1d428a 0%, #153064 83%);
+  color: white; }
+  #team .team-story {
+    background: url(../images/blueware.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    font-size: 1.25em; }
+  #team .card-panel {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87); }
+    #team .card-panel.first-panel {
+      background-color: #4073d7;
+      color: white; }
+
+.person {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: white;
+  margin-bottom: 100px; }
+  .person h4:first-child {
+    padding-top: 2rem; }
+  .person .container {
+    min-height: 400px; }
+  .person #adam {
+    background: url(../images/dude.jpg) no-repeat bottom left;
+    background-size: contain; }
+  .person #gal {
+    background: url(../images/gal.jpg) no-repeat bottom right;
+    background-size: contain; }
 
 .collapsible.popout > li {
   margin: 16px 24px; }
@@ -7752,7 +7783,8 @@ footer {
 
 footer.page-footer {
   margin-top: 0;
-  color: white; }
+  color: white;
+  padding-top: 40px; }
   footer.page-footer .hla-logo {
     color: white; }
 
@@ -7989,9 +8021,6 @@ footer.page-footer {
       background-color: white; }
       .content-panel .btn-floating.js-active i {
         color: #00c47c; }
-
-footer.page-footer {
-  padding-top: 40px; }
 
 .three-things i {
   margin: 40px 0 0 0;

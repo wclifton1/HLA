@@ -21,6 +21,8 @@ $error-color: $accent-color !default;
 $link-color: $secondary-color-accent !default;
 
 $gradient:radial-gradient(ellipse at center,#fff 0,#fff 41%,#e1e1e1 99%);
+$gradient-green:radial-gradient(ellipse at center, #94C9B1 0%, $primary-color 83%);
+$gradient-blue:radial-gradient(ellipse at center, $secondary-color 0%, $secondary-color-dark 83%);
 
 $white-trans: rgba(255,255,255,0.08);
 

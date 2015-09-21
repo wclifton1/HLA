@@ -590,6 +590,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/blueware.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76440,
+		"inputAbbreviatedPath": "\/images\/blueware.jpg",
+		"outputAbbreviatedPath": "\/images\/blueware.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/dude.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8010,
+		"inputAbbreviatedPath": "\/images\/dude.jpg",
+		"outputAbbreviatedPath": "\/images\/dude.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/gal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22392,
+		"inputAbbreviatedPath": "\/images\/gal.jpg",
+		"outputAbbreviatedPath": "\/images\/gal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/heart-tubes.png": {
 		"fileType": 32768,
 		"ignore": 0,
