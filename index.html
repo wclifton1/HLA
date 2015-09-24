@@ -23,7 +23,9 @@
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="apple-mobile-web-app-title" content="mTilda">
+    <meta name="application-name" content="mTilda">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#005938">
     <!-- CSS-->
@@ -31,15 +33,6 @@
     <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="js/min/modernizr.custom.27293.js"></script>
-    <!-- CSS-->
-    <style>
-      #star{background:blue; height:500px}
-      #star {
-        text-align: center;
-        font-size: 100px;
-        line-height: 500px;
-        color: #ddd;
-      }</style>
   </head>
   <body>
    <!--  <a href="#bottom" id="top">Click to scroll down</a>
@@ -51,17 +44,7 @@
           <div class="container">
             <div class="row center first">  
               <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 205.7 66.4" xml:space="preserve" class="style0">
-                <style>
-                  .style0{
-                    enable-background:  new 0 0 205.7 66.4;
-                  }
-                </style>
-                <style type="text/css">
-                  .st0{fill:#2D2926;}
-                  .st1{fill:#FFFFFF;}
-                  .st2{fill:#D9D9D6;}
-                  .st3{opacity:0.87;}
-                </style>
+                
                 <g class="logo-goat">
                   <g class="horn-l">
                     <path class="st0" d="M25.2 24.1l12.6-2.9L20.3 2.6c-2.7-0.8-5.3-1.4-7.9-2C9.5 0 6.3-0.6 3.7 1.3C2.6 2 1.9 3.2 1.6 4.4 c-1.5 2.3-2 5-1.4 7.6c0.7 3.2 3 5.9 6.1 7.1l10.8 2.1l-3-6L8 13.5l1.4-5.9l6.9 1.1L25.2 24.1z"/>
@@ -352,9 +335,9 @@
                     <div class="row">
                       <div class="col s12 m8 offset-m4">
                         <h2>Our Story</h2>
-                        <div class="card-panel first-panel"><p class="flow-text">When you have to call support, something has already gone wrong. mTilda support packages take a proactive approach, seeking out ways to make your lab life easier before something goes wrong.</p></div>
-                        <div class="card-panel"><p>New instruments, devices, and processes often require new procedures for capturing and reporting data, and oftentimes a lab doesn’t have the bandwidth to configure each new component, or they aren’t certain how their choices will affect efficiency in the lab.</p></div>
-                        <div class="card-panel"><p>mTilda is adaptable and configurable to your lab’s changing needs. We have a dedicated support team that is ready to answer your questions and solve your problems.</p></div>
+                        <div class="card-panel first-panel"><p class="flow-text">mTilda began out of a sincere desire to make HLA lab life easier and more productive.</p></div>
+                        <div class="card-panel"><p>15 years ago, Fred Hoefnagel developed OTIS, a Unix based HLA Lab system, in order to make his work in the HLA lab more user-friendly, more organized, and with fewer errors. Soon, directors, supervisors, and technologists took notice, and wanted to see more from OTIS: more features, better design, and more helpful. In 2001, Barbara joined Fred and mTilda was born.</p></div>
+                        <div class="card-panel"><p>mTilda is a Windows based LIS for the world of histocompatibility and immunogenetics. mTilda is used as the LIS of choice for some of the most innovative and process-intensive laboratories in the country. Through user-feedback and customer relationships, we continue to learn the needs of HLA labs. Countless expansions and improvements have been developed over the years, and Fred and Barbara have continued serving their clients thoughtfully and without fail.</p></div>
                       </div>
                     </div>
                   </div>
@@ -481,75 +464,9 @@
       </footer>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script>
-      function filterPath(string) {
-      return string
-        .replace(/^\//,'')
-        .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-        .replace(/\/$/,'');
-      }
-      var locationPath = filterPath(location.pathname);
-      var scrollElem = scrollableElement('.wrap');//'html', 'body'
-     
-      $('a[href*=#]').each(function() {
-        var thisPath = filterPath(this.pathname) || locationPath;
-        if (  locationPath == thisPath
-        && (location.hostname == this.hostname || !this.hostname)
-        && this.hash.replace(/#/,'')
-        && $(this).hasClass("smooth") ) {
-        //var $target = $(this.hash), target = this.hash;
-        var $target = $("#top"), target = "#top";
-        //console.log("target: %s", target);
-          if (target) {
-            var targetOffset = $target.offset().top;
-            $(this).click(function(event) {
-              event.preventDefault();
-              $(scrollElem).animate({scrollTop: targetOffset}, 750, 'easeInOutExpo', function() {
-                location.hash = target;
-              });
-            });
-          }
-        }
-        if (  locationPath == thisPath
-        && (location.hostname == this.hostname || !this.hostname)
-        && this.hash.replace(/#/,'')
-        && $(this).hasClass("default") ) {
-        //var $target = $(this.hash), target = this.hash;
-        var $target = $("#top"), target = "#top";
-          if (target) {
-            var targetOffset = $target.offset().top;
-            $(this).click(function(event) {
-              event.preventDefault();
-              $(scrollElem).animate({scrollTop: targetOffset}, 0, function() {
-                location.hash = target;
-              });
-            });
-          }
-        }
-      });
-     
-      // use the first element that is "scrollable"
-      function scrollableElement(els) {
-        for (var i = 0, argLength = arguments.length; i <argLength; i++) {
-          var el = arguments[i],
-              $scrollElement = $(el);
-          if ($scrollElement.scrollTop()> 0) {
-            return el;
-          } else {
-            $scrollElement.scrollTop(1);
-            var isScrollable = $scrollElement.scrollTop()> 0;
-            $scrollElement.scrollTop(0);
-            if (isScrollable) {
-              return el;
-            }
-          }
-        }
-        return [];
-      };
-    </script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script>
-    <script src="bin/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/custom.js"></script>
+    <!--script src="bin/materialize.js"></script>
+    <script src="js/init.js"></script-->
+    <script src="js/min/mtilda-min.js"></script>
   </body>
 </html>

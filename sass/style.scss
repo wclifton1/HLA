@@ -56,44 +56,6 @@ nav {
   Index Page Styles
 ********************/
 
-// custom styled sidebar
-ul.side-nav.fixed li.logo {
-  text-align: center;
-  margin-top: 32px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #ddd;
-
-  &:hover {
-    background-color: transparent;
-  }
-}
-ul.side-nav.fixed {
-  overflow: hidden;
-
-  li {
-    line-height: 44px;
-
-    &:hover, &.active {
-      background-color: rgba(0,0,0,.05);
-    }
-
-    a {
-      font-size: 1.5rem;
-      line-height: 3.4rem;
-      height: 3.4rem;
-    }
-  }
-
-  ul.collapsible-accordion {
-    background-color: #FFF;
-  }
-
-  // Only show scrollbar on hover
-  &:hover {
-    overflow-y: auto;
-  }
-}
-
 .bold > a {
   font-weight: bold;
 }
@@ -103,54 +65,11 @@ ul.side-nav.fixed {
   margin-bottom: 32px;
 }
 
-nav.top-nav {
-  height: 122px;
-  box-shadow: none;
-
-  a.page-title {
-    line-height: 122px;
-    font-size: 48px;
-  }
-}
-a.button-collapse.top-nav {
-  position: absolute;
-  text-align: center;
-  height: 48px;
-  //width: 48px;
-  left: 7.5%;
-  top: 0;
-  float: none;
-  //margin-left: 1.5rem;
-  color: #fff;
-  font-size: 32px;
-  z-index: 2;
-
-  &.full {
-    line-height: 122px;
-  }
-}
-@media #{$small-and-down} {
-  a.button-collapse.top-nav {
-    left: 5%;
-  }
-}
-
-@media #{$medium-and-down} {
-  nav .nav-wrapper {
-    text-align: center;
-
-    a.page-title {
-      font-size: 36px;
-    }
-  }
-}
-
 @media #{$large-and-up} {
   .container {
     width: 85%;
   }
 }
-
 
 #front-page-logo {
   display: inline-block;
@@ -230,22 +149,6 @@ a.button-collapse.top-nav {
   }
 }
 
-// @media #{$medium-and-down} and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
-//   #index-banner {
-//     .first {
-//       margin-top: 15vh;
-//       margin-bottom:0;
-//     }
-//     //font-size: .75rem;
-//     .header-logo{
-//       width:35%;
-//     }
-//     .fallback{
-//       width:35%;
-//     }
-//   }
-// }
-
 
 // HLA bar (Latest commit widget)
 .hla {
@@ -316,28 +219,6 @@ a.button-collapse.top-nav {
   }
 }
 
-.search {
-  position: absolute;
-  top: 155px;
-  left: 20px;
-  right: 20px;
-  input {
-    width: 265px;
-    border: 1px solid #ccc;
-    padding: 8px;
-    font-size: 15px;
-    transition: width 0.2s;
-    -webkit-appearance: none;
-  }
-  .fix-search & {
-    position: fixed;
-    top: 10px;
-    input {
-      width: 250px;
-    }
-  }
-}
-
 .wrap{
   height: 100vh; //required to make it work
   overflow: auto; //THIS LINE MAKES IT WORK
@@ -367,207 +248,13 @@ a.button-collapse.top-nav {
 
 }
 
-#front-page-nav {
-  background-color: #FFF;
-  position: relative;
-  a {
-      color: color("materialize-red", "lighten-2");
-    }
-  li {
-    &:hover {
-      background-color: color("materialize-red", "lighten-5");
-    }
-    &.active {
-      background-color: color("materialize-red", "lighten-5");
-    }
-  }
-  .container {
-    height: inherit;
-  }
-}
-
-// Grid doc styles
-
-.col.grid-example {
-  border: 1px solid #eee;
-  margin: 7px 0;
-  text-align: center;
-  line-height: 50px;
-  font-size: 28px;
-  background-color: tomato;
-  color: white;
-  padding: 0;
-
-  span {
-    font-weight: 200;
-    line-height: 50px;
-  }
-}
-
-.promo-example {
-  overflow: hidden;
-}
-
-
-/*******************
-  Flat Site Mockup
-*******************/
-
-#site-layout-example-left {
-  background-color: color("blue-grey", "lighten-2");
-  height: 300px;
-}
-#site-layout-example-right {
-  background-color: color("teal", "lighten-1");
-  height: 300px;
-}
-#site-layout-example-top {
-  background-color: color("red", "lighten-2");
-  height: 42px;
-}
-
-.flat-text-header {
-  height: 35px;
-  width: 80%;
-  background-color: rgba(255,255,255,.15);
-  display: block;
-  margin: 27px auto;
-}
-.flat-text {
-  height: 25px;
-  width: 80%;
-  background-color: rgba(0,0,0,.15);
-  display: block;
-  margin: 27px auto;
-  &.small {
-    width: 25%;
-    height: 25px;
-    background-color: rgba(0,0,0,.15);
-  }
-  &.full-width {
-    width: 100%;
-  }
-}
-
-/**********************
-**********************/
-
-/*****************
-  Chrome Browser
-*****************/
-$bottomColor: #E2E2E1;
-$topColor: lighten($bottomColor, 2%);
-
-$border: $bottomColor;
-
-$width: 100%;
-$height: auto;
-
-.browser-window {
-  text-align: left;
-  width: $width;
-  height: $height;
-  display: inline-block;
-  border-radius: 5px 5px 2px 2px;
-  background-color: #fff;
-  margin: 20px 0px;
-  overflow: hidden;
-
-    .top-bar {
-    height: 30px;
-    border-radius: 5px 5px 0 0;
-    border-top: thin solid lighten($topColor, 1%);
-    border-bottom: thin solid darken($bottomColor, 1%);
-    background: linear-gradient($topColor, $bottomColor);
-  }
-}
-
-.browser-window .circle {
-  height: 10px;
-  width: 10px;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: lighten($topColor, 10%);
-  margin-right: 1px;
-}
-#close-circle {
-  background-color: #FF5C5A;
-}
-#minimize-circle {
-  background-color: #FFBB50;
-}
-#maximize-circle {
-  background-color: #1BC656;
-}
-.browser-window .circles { margin: 5px 12px; }
-.browser-window .content {
-  margin: 0;
-  width: 100%;
-  // min-height: 100%;
-  display: inline-block;
-  border-radius: 0 0 5px 5px;
-  background-color: #fafafa;
-}
-.browser-window .row {
-  margin: 0;
-}
 
 .clear { clear: both; }
 
-/**********************
-**********************/
-
-
-// Color Wheel
-.dynamic-color {
-
-  .red, .pink, .purple, .deep-purple, .indigo, .blue, .light-blue, .cyan, .teal, .green, .light-green, .lime, .yellow, .amber, .orange, .deep-orange, .brown , .grey,  .blue-grey, .black, .white, .transparent {
-    height: 55px;
-    width: 100%;
-    padding: 0 15px;
-    line-height: 55px;
-    font-weight: 500;
-    font-size: 12px;
-    display: block;
-    @include box-sizing(border-box);
-  }
-  .col {
-    margin-bottom: 55px;
-  }
-}
 
 .center {
   text-align: center;
   vertical-align: middle;
-}
-
-// Icons
-.material-icons.icon-demo {
-  line-height: 50px;
-}
-.icon-container i {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-.icon-container .icon-preview {
-  height: 120px;
-  text-align: center;
-}
-.icon-container span {
-  display: block;
-}
-
-.icon-holder {
-  display: block;
-  text-align: center;
-  width: 150px;
-  height: 115px;
-
-  float: left;
-  margin: 0 0px 15px 0px;
-  p {
-    margin: 0 0;
-  }
 }
 
 // tabs
@@ -584,192 +271,11 @@ $height: auto;
   }
 }
 
-
-// Shadow demo styling
-.shadow-demo {
-  background-color: color("teal", "lighten-1");
-  width: 100px;
-  height: 100px;
-  margin: 20px auto;
-
-  @media only screen and (max-width: $small-screen) {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-// parallax demo
-.parallax-container {
-
-  .text-center {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin-top: -27px;
-  }
-
-}
-
 // Table of contents
 ul.table-of-contents {
   margin-top: 0;
   padding-top: 48px;
 }
-
-// Prism Styling
-code, pre {
-  position: relative;
-  font-size: 1.1rem;
-}
-
-.directory-markup {
-  font-size: 1rem;
-  line-height: 1.1rem !important;
-}
-pre[class*="language-"] {
-  &:before {
-    position: absolute;
-    padding: 1px 5px;
-    background: hsl(30, 10%, 90%);
-    top: 0;
-    left: 0;
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #555;
-    content:attr(class);
-    font-size: .9rem;
-    border: solid 1px rgba(51, 51, 51, 0.12);
-    border-top: none;
-    border-left: none;
-  }
-  padding: 25px 12px 7px 12px;
-  border: solid 1px rgba(51, 51, 51, 0.12);
-}
-
-
-// Carbon Ads styling
-.toc-wrapper {
-  position: relative;
-  margin-top: 42px;
-}
-
-#carbonads {
-  max-width: 150px;
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  -webkit-font-smoothing: antialiased;
-
-  & > span,
-  span.carbon-wrap {
-    height: 100px;
-    display: block;
-  }
-  a.carbon-img {
-    height: 100px;
-    display: inline-block;
-    margin-right: 10px;
-  }
-  a.carbon-text,
-  input[type="submit"] {
-    position: relative;
-    top: 0;
-    width: 150px;
-    vertical-align: top;
-    display: inline-block;
-    font-size: 13px;
-    color: color("red", "lighten-2");
-  }
-  a.carbon-poweredby {
-    position: relative;
-    left: 28px;
-    font-size: 11px;
-    color: color("red", "lighten-3");
-  }
-}
-.buysellads #carbonads {
-
-  & > span,
-  span.carbon-wrap { height: auto; }
-
-  a.carbon-text {
-    top: 5px;
-    left: 0;
-    width: 130px;
-    display: block;
-    font-size: 13px;
-    -webkit-font-smoothing: antialiased;
-    color: #E57373;
-  }
-  a.carbon-poweredby {
-    top: 5px;
-  }
-}
-.buysellads-header #carbonads {
-  & > span,
-  span.carbon-wrap { height: auto; }
-  a.carbon-text { color: #fff; }
-  a.carbon-poweredby { color: rgba(255,255,255,.8); }
-}
-
-
-// BuySellAds Styling
-.buysellads {
-  -webkit-font-smoothing: antialiased;
-  position: relative;
-
-  .bsa_it.one {
-    width: 130px;
-    position: absolute;
-    left: 0;
-    top: 50px;
-
-    .bsa_it_p {
-      left: 0;
-      bottom: -15px;
-    }
-    .bsa_it_ad .bsa_it_t { color: color("red", "lighten-2"); }
-    .bsa_it_ad .bsa_it_d { color: color("red", "lighten-3"); }
-  }
-
-  .bsa_it_ad a {
-    display: block;
-    width: 130px;
-  }
-}
-
-.buysellads-header {
-  margin-top: 30px;
-
-  .bsa_it.one .bsa_it_p { bottom: -20px; }
-}
-
-.bsa_it.one {
-  min-width: 230px;
-  max-width: 270px;
-  display: inline-block;
-  text-align: left;
-
-  .bsa_it_ad {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-
-    .bsa_it_t { color: #fff; }
-    .bsa_it_d { color: color("red", "lighten-4"); }
-  }
-
-  .bsa_it_p {
-    right: auto;
-    left: 40px;
-    bottom: -5px;
-
-    a { color: color("red", "lighten-4"); }
-  }
-}
-
-
 
 // Footer styling
 footer{
@@ -1171,3 +677,10 @@ footer.page-footer {
     vertical-align: middle;
   }
 }
+
+//svg
+.style0{enable-background:  new 0 0 205.7 66.4;}
+.st0{fill:#2D2926;}
+.st1{fill:#FFFFFF;}
+.st2{fill:#D9D9D6;}
+.st3{opacity:0.87;}
