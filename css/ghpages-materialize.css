@@ -5422,7 +5422,7 @@ html {
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
     html {
-      font-size: 12px; } }
+      font-size: 13px; } }
   @media only screen and (min-width: 992px) {
     html {
       font-size: 14px; } }
@@ -5767,7 +5767,8 @@ strong {
   font-weight: 300; }
   .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
     font-size: 1.3rem;
-    line-height: inherit; }
+    line-height: inherit;
+    vertical-align: middle; }
   .btn i.tag, .btn-large i.tag, .btn-floating i.tag, .btn-large i.tag, .btn-flat i.tag {
     line-height: 100%;
     font-size: 4rem;
@@ -5787,7 +5788,7 @@ strong {
 
 .btn-blue {
   background-color: #1957d0; }
-  .btn-blue:hover {
+  .btn-blue:hover, .btn-blue:focus {
     background-color: #1f62e4; }
 
 .btn-floating {
@@ -6904,6 +6905,73 @@ select {
   border-radius: 2px;
   height: 3rem; }
 
+.slider {
+  position: relative;
+  height: 400px;
+  width: 100%; }
+  .slider.fullscreen {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .slider.fullscreen ul.slides {
+      height: 100%; }
+    .slider.fullscreen ul.indicators {
+      z-index: 2;
+      bottom: 30px; }
+  .slider .slides {
+    background-color: #9e9e9e;
+    margin: 0;
+    height: 400px; }
+    .slider .slides li {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: inherit;
+      overflow: hidden; }
+      .slider .slides li img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center; }
+      .slider .slides li .caption {
+        color: #fff;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+        opacity: 0; }
+        .slider .slides li .caption p {
+          color: #e0e0e0; }
+      .slider .slides li.active {
+        z-index: 2; }
+  .slider .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0; }
+    .slider .indicators .indicator-item {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      height: 16px;
+      width: 16px;
+      margin: 0 12px;
+      background-color: #e0e0e0;
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+      border-radius: 50%; }
+      .slider .indicators .indicator-item.active {
+        background-color: #4CAF50; }
+
 /***************
   HTML Styles
 ***************/
@@ -7249,17 +7317,18 @@ footer.page-footer {
   footer.page-footer .hla-logo {
     color: white; }
 
+#demo {
+  background: -webkit-radial-gradient(center, ellipse, #fff 0, #fff 41%, #e1e1e1 99%);
+  background: radial-gradient(ellipse at center, #fff 0, #fff 41%, #e1e1e1 99%); }
+
 .content-panel {
   height: 900px;
-  background: -webkit-radial-gradient(center, ellipse, #fff 0, #fff 41%, #e1e1e1 99%);
-  background: radial-gradient(ellipse at center, #fff 0, #fff 41%, #e1e1e1 99%);
   overflow: hidden;
   position: relative;
   padding: 55px;
   box-sizing: content-box; }
   @media only screen and (max-width: 767px) {
     .content-panel {
-      background: rgba(144, 164, 174, 0.1);
       height: auto;
       padding: 58px 24px; } }
   @media only screen and (max-width: 767px) {
@@ -7366,25 +7435,12 @@ footer.page-footer {
       -webkit-transition: all 200ms ease-in-out;
               transition: all 200ms ease-in-out;
       width: 300px; }
-      .content-panel .phone-text-panel .text h4:before {
-        content: " ";
-        display: inline-block;
-        height: 26px;
-        margin-bottom: -5px;
-        margin-right: .25rem;
-        width: 26px; }
-      .content-panel .phone-text-panel .text h4.multitasking-header:before {
-        background: #fff url(../images/view_quilt.svg) left 50% no-repeat;
-        background-size: contain; }
-      .content-panel .phone-text-panel .text h4.notifications-header:before {
-        background: #fff url(../images/trending_up.svg) left 50% no-repeat;
-        background-size: contain; }
-      .content-panel .phone-text-panel .text h4.design-header:before {
-        background: #fff url(../images/add.svg) left 50% no-repeat;
-        background-size: contain; }
+      .content-panel .phone-text-panel .text i {
+        vertical-align: middle;
+        margin-right: .5rem; }
       .content-panel .phone-text-panel .text h4 {
         color: #008755;
-        font-size: 20px;
+        font-size: 26px;
         margin: 0 0 4px 0; }
       .content-panel .phone-text-panel .text p {
         margin: 20px 0; }
@@ -7505,5 +7561,8 @@ footer.page-footer {
 
 .st3 {
   opacity: 0.87; }
+
+i {
+  vertical-align: middle; }
 
 /*# sourceMappingURL=ghpages-materialize.css.map */

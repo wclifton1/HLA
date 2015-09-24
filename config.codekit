@@ -829,7 +829,7 @@
 		},
 	"\/js\/slider.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/slider.js",
 		"outputAbbreviatedPath": "\/js\/min\/slider-min.js",

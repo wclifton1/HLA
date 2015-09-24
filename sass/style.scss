@@ -422,15 +422,17 @@ footer.page-footer {
   }
 }
 
+#demo{
+  background: $gradient;
+}
+
 .content-panel{
   height: 900px;
-  background: $gradient;
   overflow: hidden;
   position: relative;
   padding: 55px;
   box-sizing:content-box;
   @media only screen and (max-width: 767px){
-    background: rgba(144,164,174,.1);
     height: auto;
     padding: 58px 24px;
   }
@@ -539,29 +541,13 @@ footer.page-footer {
       transition: all 200ms ease-in-out;
       //visibility: hidden;
       width: 300px;
-      h4:before {
-        content: " ";
-        display: inline-block;
-        height: 26px;
-        margin-bottom: -5px;
-        margin-right: .25rem;
-        width: 26px;
-      }
-      h4.multitasking-header:before{
-        background: #fff url(../images/view_quilt.svg) left 50% no-repeat;
-        background-size: contain;
-      }
-      h4.notifications-header:before{
-        background: #fff url(../images/trending_up.svg) left 50% no-repeat;
-        background-size: contain;
-      }
-      h4.design-header:before{
-        background: #fff url(../images/add.svg) left 50% no-repeat;
-        background-size: contain;
+      i{
+        vertical-align: middle;
+        margin-right: .5rem;
       }
       h4 {
         color: $primary-color;
-        font-size: 20px;
+        font-size: 26px;
         margin: 0 0 4px 0;
       }
       p {
@@ -684,3 +670,7 @@ footer.page-footer {
 .st1{fill:#FFFFFF;}
 .st2{fill:#D9D9D6;}
 .st3{opacity:0.87;}
+
+i{
+  vertical-align: middle;
+}

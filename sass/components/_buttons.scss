@@ -33,6 +33,7 @@
   i {
     font-size: $button-font-size-shared;
     line-height: inherit;
+    vertical-align: middle;
   }
   i.tag{
     line-height: 100%;
@@ -64,7 +65,7 @@
 
 .btn-blue{
   background-color: $secondary-color-accent;
-  &:hover{
+  &:hover, &:focus{
     background-color: lighten($secondary-color-accent, 5%);
   }
 }

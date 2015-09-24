@@ -5,6 +5,7 @@
 // @codekit-prepend "cards.js";
 // @codekit-prepend "collapsible.js";
 // @codekit-prepend "forms.js";
+// @codekit-prepend "slider.js";
 // @codekit-prepend "tabs.js";
 // @codekit-prepend "waves.js";
 // @codekit-prepend "init.js";
@@ -101,3 +102,7 @@ function filterPath(string) {
         }
         return [];
       };
+$(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+        
