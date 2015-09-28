@@ -1,2 +1,3 @@
 # Ignored files
 *.codekit
+/sass/.sass-cache/*
