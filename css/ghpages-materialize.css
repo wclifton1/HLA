@@ -7259,6 +7259,8 @@ footer {
   background: -webkit-radial-gradient(center, ellipse, #1d428a 0%, #153064 83%);
   background: radial-gradient(ellipse at center, #1d428a 0%, #153064 83%);
   color: white; }
+  #team .team {
+    padding-top: 100px; }
   #team .team-story {
     background: url(../images/blueware.jpg) no-repeat center center;
     background-size: cover;
@@ -7274,14 +7276,14 @@ footer {
 .person {
   color: rgba(0, 0, 0, 0.87);
   background-color: white;
-  margin-bottom: 100px; }
+  margin-top: 100px;
+  min-height: 400px;
+  position: relative; }
   .person h4:first-child {
     padding-top: 2rem; }
-  .person .container {
-    min-height: 400px; }
-  .person #adam {
-    background: url(../images/dude.jpg) no-repeat bottom left;
-    background-size: contain; }
+  .person .bottom {
+    position: absolute;
+    bottom: 0; }
   .person #gal {
     background: url(../images/gal.jpg) no-repeat bottom right;
     background-size: contain; }
@@ -7534,9 +7536,9 @@ footer.page-footer {
     .content-panel .btn-floating.notifications {
       bottom: 75px;
       left: 70px; }
-    .content-panel .btn-floating.js-active {
+    .content-panel .btn-floating.active {
       background-color: white; }
-      .content-panel .btn-floating.js-active i {
+      .content-panel .btn-floating.active i {
         color: #00c47c; }
 
 .three-things i {

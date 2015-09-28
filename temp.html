@@ -35,6 +35,9 @@
     <script type="text/javascript" src="js/min/modernizr.custom.27293.js"></script>
   </head>
   <body>
+   <!--  <a href="#bottom" id="top">Click to scroll down</a>
+    <div id="star">&star;</div>
+    <a href="#top" id="bottom">Click to scroll up</a> -->
     <div class="wrap" id="wrap">
       <main>
         <div class="section" id="index-banner">
@@ -86,7 +89,7 @@
             </div>
             <div class="row center">
               <a href="#top" id="learn-btn" class="smooth btn-large waves-effect waves-light header-btn hide-on-small-only">Learn More</a>
-              <a href="#demo" id="demo-btn" class="smooth btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
+              <a href="#footer" id="demo-btn" class="smooth btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
             </div>
           </div>
         </div>
@@ -108,16 +111,12 @@
                 <div class="col s2 tabs">
                   <a class="smooth" href="#index-banner"><object class="logo" type="image/svg+xml" data="images/logo-head.svg"></object></a>
                 </div>
-                <div class="col s8">
+                <div class="col s10">
                   <ul class="tabs">
-                    <li class="tab col s4"><a class="active default" href="#product">Product</a></li>
-                    <li class="tab col s4"><a class="default" href="#support">Support</a></li>
-                    <li class="tab col s4"><a class="default" href="#team">Team</a></li>
-                  </ul>
-                </div>
-                <div class="col s2">
-                  <ul class="">
-                    <li class="col s12"><a class="smooth" href="#demo"><button class="btn demo-btn">Demo</button></a></li>
+                    <li class="tab col s3"><a class="active" href="#product">Product</a></li>
+                    <li class="tab col s3"><a href="#support">Support</a></li>
+                    <li class="tab col s3"><a href="#team">Team</a></li>
+                    <li class="tab col s3"><a href="#footer"><button class="btn demo-btn">Demo</button></a></li>
                   </ul>
                 </div>
               </div>
@@ -172,7 +171,7 @@
                   </div>
                 </div>
               </div>
-              <div id="" class="content-panel full-width">
+              <div id="demo" class="content-panel full-width">
                 <div class="phone-centered clearfix">
                   <div class="phone-content">
                     <h2><strong>Introducing mTilda</strong><br>making lab life easier</h2>
@@ -199,9 +198,9 @@
                     </div>
                   </div>
                   <div class="phone-base">
-                    <div class="btn-floating btn-large waves-effect waves-light multitasking js-phone-trigger active" id="multitasking-button" data-target="multitasking" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">view_quilt</i></div>
-                    <div class="btn-floating btn-large waves-effect waves-light notifications js-phone-trigger" data-target="notifications" id="notifications-button" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">sync</i></div>
-                    <div class="btn-floating btn-large waves-effect waves-light design js-phone-trigger" data-target="design" id="design-button" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">storage</i></div>
+                    <div class="btn-floating btn-large waves-effect waves-light multitasking js-phone-trigger active" data-target="multitasking" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">view_quilt</i></div>
+                    <div class="btn-floating btn-large waves-effect waves-light notifications js-phone-trigger" data-target="notifications" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">sync</i></div>
+                    <div class="btn-floating btn-large waves-effect waves-light design js-phone-trigger" data-target="design" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><i class="material-icons">storage</i></div>
                     <div class="phone-screen"></div>
                   </div>
                 </div>
@@ -377,7 +376,7 @@
               </div>
 
               <div class="">
-                <h2 class="center light team">Meet Your Team</h2>
+                <h3 class="center light">Meet Your Team</h3>
                 
                 <div class="person">
                   <div id="fred" class="container">
@@ -445,7 +444,7 @@
                 <div class="person">
                   <div id="adam" class="container">
                     <div class="row">
-                      <div class="col m8 s12">
+                      <div class="col m8 offset-m4 s12">
                         <h4>Adam Day</h4>
                         <h4 class="light">Chief Financial Officer</h4>
                         <p>Adam’s functional background is in customer experience consulting and he is an advocate for the Voice of the Customer. He brings marketing, finance, and leadership experience to the team. As part of the leadership team of HLA Data Systems, he is involved in strategic, financial, and operational decision-making.</p>
@@ -472,7 +471,7 @@
             
           </div><!--tab-contents-->
         </div><!--tab-container-->
-        <div id="demo" class="section space">
+        <div id="footer" class="section">
           <div class="row center">
             <h3 class="light">Contact Us For a Demo</h3>
             <p class="col s8 offset-s2 caption">Whether you need to make an LIS decision immediately, or you are just starting to explore software options, there is no substitute for seeing the product in action. We are more than happy to give you an in-depth demonstration or just an overview. We can work with our functional script, follow a script that you’ve created, or mix and match according to your lab needs and processes. Just drop us a note here and we will be in touch shortly!</p>

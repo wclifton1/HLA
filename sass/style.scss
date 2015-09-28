@@ -348,6 +348,9 @@ footer{
   background-color:$secondary-color-dark;
   background:$gradient-blue;
   color:white;
+  .team{
+    padding-top:100px;
+  }
   .team-story{
     background:url(../images/blueware.jpg) no-repeat center center;
     background-size: cover;
@@ -362,23 +365,23 @@ footer{
       color:white;
     }
   }
-
-
-  
 }
 .person{
     color:$off-black;
     background-color:white;
-    margin-bottom:100px;
+    margin-top:100px;
+    min-height: 400px;
+    position:relative;
     h4:first-child{
       padding-top:2rem;
     }
-    .container{
-      min-height: 400px;
+    .bottom{
+      position:absolute;
+      bottom:0;
     }
     #adam{
-      background:url(../images/dude.jpg) no-repeat bottom left;
-      background-size:contain;
+      //background:url(../images/dude.jpg) no-repeat bottom left;
+      //background-size:contain;
     }
     #gal{
       background:url(../images/gal.jpg) no-repeat bottom right;
@@ -644,7 +647,7 @@ footer.page-footer {
       bottom: 75px;
       left: 70px;
     }
-    &.js-active {
+    &.active {
       background-color:white;
       i{
         color:$primary-color-light;

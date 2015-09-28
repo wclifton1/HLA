@@ -28,12 +28,19 @@ $('.text#multitasking').show();
 
 $('.phone-base div.btn-floating').click(function(){
     var target = "#" + $(this).data("target");
+    $(".js-phone-trigger").removeClass("active");
+    $(this).addClass("active");
     $(".text").not(target).hide();
     $(target).show();
+
 });
 
 $('.phone-text-panel span.js-phone-trigger').click(function(){
     var target = "#" + $(this).data("target");
+    var target2 = "#" + $(this).data("target") + "-button";
+    console.log(target2);
+    $(".js-phone-trigger").removeClass("active");
+    $(target2).addClass("active");
     $(".text").not(target).hide();
     $(target).show();
 });
@@ -53,8 +60,8 @@ function filterPath(string) {
         && (location.hostname == this.hostname || !this.hostname)
         && this.hash.replace(/#/,'')
         && $(this).hasClass("smooth") ) {
-        //var $target = $(this.hash), target = this.hash;
-        var $target = $("#top"), target = "#top";
+        var $target = $(this.hash), target = this.hash;
+        //var $target = $("#top"), target = "#top";
         //console.log("target: %s", target);
           if (target) {
             var targetOffset = $target.offset().top;
