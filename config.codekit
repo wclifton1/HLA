@@ -420,17 +420,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/macbook-left.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15187,
-		"inputAbbreviatedPath": "\/images\/macbook-left.png",
-		"outputAbbreviatedPath": "\/images\/macbook-left.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/monitor.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -438,17 +427,6 @@
 		"initialSize": 46883,
 		"inputAbbreviatedPath": "\/images\/monitor.png",
 		"outputAbbreviatedPath": "\/images\/monitor.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/office.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 159054,
-		"inputAbbreviatedPath": "\/images\/office.jpg",
-		"outputAbbreviatedPath": "\/images\/office.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
