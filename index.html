@@ -36,7 +36,7 @@
   </head>
   <body>
     <div class="wrap" id="wrap">
-      <main>
+      <main id="to-demo">
         <div class="section" id="index-banner">
           <div class="container">
             <div class="row center first">  
@@ -86,7 +86,7 @@
             </div>
             <div class="row center">
               <a href="#top" id="learn-btn" class="smooth btn-large waves-effect waves-light header-btn hide-on-small-only">Learn More</a>
-              <a href="#demo" id="demo-btn" class="smooth btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
+              <a href="#demo" id="demo-btn" class="btn-large waves-effect waves-light header-btn demo-btn"><object id="tag" type="image/svg+xml" data="images/loyalty.svg"></object>Request a Demo</a>
             </div>
           </div>
         </div>
@@ -116,6 +116,8 @@
                   </ul>
                 </div>
                 <div class="col s2">
+                  <ul class="no-margin">
+                    <li class="col s12"><a class="" href="#demo"><button id="demo-btn2" class="btn demo-btn">Demo</button></a></li>
                   </ul>
                 </div>
               </div>
@@ -136,7 +138,7 @@
 
                     <div class="section three-things">
                       <div class="row">
-                        <div class="col s12 m4">
+                        <div class="col s12 l4">
                           <div class="card white">
                             <div class="card-content">
                               <i class="material-icons">sd_storage</i>
@@ -146,7 +148,7 @@
                           </div>
                         </div>
 
-                        <div class="col s12 m4">
+                        <div class="col s12 l4">
                           <div class="card white">
                             <div class="card-content">
                               <i class="material-icons">beenhere</i>
@@ -156,10 +158,11 @@
                           </div>
                         </div>
 
-                        <div class="col s12 m4">
+                        <div class="col s12 l4">
                           <div class="card white">
                             <div class="card-content">
                               <i class="material-icons">accessibility</i>
+                              <span class="card-title center"><small>Your</small><br>HLA Advocates</span>
                               <p>We want to be your champion in the laboratory, in the clinic, and in the world of Histocompatibility and Immunogenetics. The regulatory environment is constantly evolving, as are vendor requirements and hospital policies. It has become nearly impossible to keep up with the shifting demands of the industry. That’s where we come in. HLA Data Systems will partner with you in all things related to the HLA laboratory: interface projects, workflow improvement, user training, and much more.</p>
                             </div>
                           </div>
@@ -468,14 +471,18 @@
             </div>
             
           </div><!--tab-contents-->
+          
         </div><!--tab-container-->
-        <div id="demo" class="section space">
-          <div class="row center">
-            <h3 class="light">Contact Us For a Demo</h3>
-            <p class="col s8 offset-s2 caption">Whether you need to make an LIS decision immediately, or you are just starting to explore software options, there is no substitute for seeing the product in action. We are more than happy to give you an in-depth demonstration or just an overview. We can work with our functional script, follow a script that you’ve created, or mix and match according to your lab needs and processes. Just drop us a note here and we will be in touch shortly!</p>
+        
+      </main>
+      <div id="demo" class="section">
+        <div class="container">
+          <div class="row center white-card">
+            <h3 class="light">Contact Us For a Demo<br><i class="large material-icons">local_play</i></h3>
+            <p class="col s10 offset-s1 flow-text">Whether you need to make an LIS decision immediately, or you are just starting to explore software options, there is no substitute for seeing the product in action. We are more than happy to give you an in-depth demonstration or just an overview. We can work with our functional script, follow a script that you’ve created, or mix and match according to your lab needs and processes. Just drop us a note below and we will be in touch shortly!</p>
           </div>
         </div>
-      </main>
+      </div>
       <div class="divider"></div>    
       <footer class="page-footer">
         <div class="container">
@@ -487,11 +494,16 @@
               </div>
             </div>
             
+            <div class="col m4 s12" style="overflow: hidden;">
               <h5 class="white-text">Connect</h5>
               <br>
+
+              <a href="https://twitter.com/hladata" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @hladata</a>
               <br>
               <div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/" data-rel="publisher"></div>
+            </div>
 
+            <div class="col m5 s12">
               <h5 class="white-text">Contact the mTilda Team</h5>
               <div class="row">
                 <form action="MAILTO:support@mtilda.com" method="post" enctype="text/plain" class="col s12">
@@ -515,6 +527,7 @@
                       <button class="btn btn-blue waves-effect waves-light btn-right btn-block" type="submit" value="Send" name="action">Submit
                         <i class="material-icons">send</i>
                       </button>
+
                     </div>
                   </div>
                 </form>
@@ -532,6 +545,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script>
     <script src="js/min/mtilda-min.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
